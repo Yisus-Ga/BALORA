@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🪴VIVERO MARTÍNEZ - Plantas y árboles de estación</title>
+    <meta name="description"
+        content="Vivero familiar con historia en Mar del Plata. Plantas y árboles de estación, conciencia ecológica y tradición.">
     <link rel="stylesheet" href="css/index.css">
-    <!--Favicon-->
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+
+
+
 </head>
 
 <body>
@@ -16,216 +20,183 @@
             <img src="imagenes/BANNERcopia2.PNG" alt="LOGO VIVERO">
         </div>
 
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
 
-        <ul>
-            <a href="#bienvenidos">
-                <li>NOSOTROS</li>
-            </a>
-            <a href="#plantin">
-                <li>PLANTAS</li>
-            </a>
-            <a href="#tree">
-                <li>ARBOLES</li>
-            </a>
-            <a href="#contacto">
-                <li>CONTACTO</li>
-            </a>
+
+        <ul id="menu">
+            <li><a href="#bienvenidos">NOSOTROS</a></li>
+            <li><a href="#plantin">PLANTAS</a></li>
+            <li><a href="#tree">ARBOLES</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
         </ul>
     </nav>
 
+
     <div id="relleno"></div>
-
-    <header>
-
-
-    </header>
-
+    <header></header>
     <hr>
 
     <main>
-
-        <a id="wpp" href="https://wa.me/5491154902893" target="_blank"><img src="imagenes/wpp.svg" alt=""></a>
-
-        <h1 id="bienvenidos">Bienvenidos a Vivero Martinez <br> el más completo de Mar del Plata</h1>
-
-        <section id="nosotros">
-            <div id="infoHistoria">
-                <h2>Nuestra Historia</h2>
-                <p>En el corazón palpitante de Mar del Plata, donde el cemento parece ganar terreno, <strong>VIVERO
-                        MARTINEZ</strong>
-                    resiste como un pulmón verde, vivo y ancestral. Su origen se remonta a principios del siglo XX,
-                    cuando <b>Don Julián Martínez</b>, apasionado por las plantas y los secretos de la tierra, decidió
-                    plantar
-                    su primer árbol en este mismo suelo. Desde entonces, cada generación de la familia Martínez ha
-                    heredado no solo el amor por la
-                    jardinería, sino un compromiso sagrado: <b>cultivar vida y purificar el aire de Mar del Plata</b>.
-                    Con más
-                    de 1500 m² de naturaleza viva, nuestro vivero es un refugio para quienes buscan volver
-                    a conectarse con lo natural, lo auténtico y lo esencial. <br>Hoy, <b>VIVERO MARTINEZ</b> es un
-                    símbolo de resistencia ecológica, tradición familiar y belleza orgánica.
-                    Aquí no solo se venden plantas y árboles: <strong>se siembra conciencia, se respira futuro</strong>.
-                </p>
-
-            </div>
-
-            <div id="fotoHistoria">
-                <img src="imagenes/svg2.svg" alt="imagen ilustrativa con un arbol">
-
-            </div>
-            <div id="plantin">
-
-            </div>
-
-
-        </section>
-
-        <hr>
-
-        <section id="destacados">
-            <h2><strong>Plantas destacadas de la temporada</strong></h2>
-
-            <div id="plantas">
-                <div class="fotoplanta" id="p1"></div>
-                <div class="fotoplanta" id="p2"></div>
-                <div class="fotoplanta" id="p3"></div>
-                <div class="fotoplanta" id="p4"></div>
-                <div class="fotoplanta" id="p5"></div>
-                <div class="fotoplanta" id="p6"></div>
-                <div class="fotoplanta" id="p7"></div>
-                <div class="fotoplanta" id="p8"></div>
-
-            </div>
-
-        </section>
-
-
-        <iframe src="https://www.youtube.com/embed/mYF7ibt-GyI?si=JO4xt0DCPJ19z-vK" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <div class="contenedor">
+            <a id="wpp" href="https://wa.me/5491154902893" target="_blank"><img src="imagenes/wpp.svg"
+                    alt="Whatsapp"></a>
+            <h1 id="bienvenidos">Bienvenidos a Vivero Martinez <br> el más completo de Mar del Plata</h1>
+            <section id="nosotros">
+                <div id="infoHistoria">
+                    <h2>Nuestra Historia</h2>
+                    <p>En el corazón palpitante de Mar del Plata, donde el cemento parece ganar terreno, <strong>VIVERO
+                            MARTINEZ</strong>
+                        resiste como un pulmón verde, vivo y ancestral. Su origen se remonta a principios del siglo XX,
+                        cuando <b>Don Julián Martínez</b>, apasionado por las plantas y los secretos de la tierra,
+                        decidió
+                        plantar
+                        su primer árbol en este mismo suelo. Desde entonces, cada generación de la familia Martínez ha
+                        heredado no solo el amor por la
+                        jardinería, sino un compromiso sagrado: <b>cultivar vida y purificar el aire de Mar del
+                            Plata</b>.
+                        Con más
+                        de 1500 m² de naturaleza viva, nuestro vivero es un refugio para quienes buscan volver
+                        a conectarse con lo natural, lo auténtico y lo esencial. <br>Hoy, <b>VIVERO MARTINEZ</b> es un
+                        símbolo de resistencia ecológica, tradición familiar y belleza orgánica.
+                        Aquí no solo se venden plantas y árboles: <strong>se siembra conciencia, se respira
+                            futuro</strong>.
+                    </p>
+                </div>
+                <div id="fotoHistoria">
+                    <img src="imagenes/svg2.svg" alt="imagen ilustrativa con un arbol">
+                </div>
+            </section>
         </div>
+
+        <hr id="plantin">
+
+        <div class="contenedor">
+            <section id="destacados">
+                <h2><strong>Plantas destacadas de la temporada</strong></h2>
+                <div id="plantas">
+                    <div class="fotoplanta" id="p1"></div>
+                    <div class="fotoplanta" id="p2"></div>
+                    <div class="fotoplanta" id="p3"></div>
+                    <div class="fotoplanta" id="p4"></div>
+                    <div class="fotoplanta" id="p5"></div>
+                    <div class="fotoplanta" id="p6"></div>
+                    <div class="fotoplanta" id="p7"></div>
+                    <div class="fotoplanta" id="p8"></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="contenedor">
+            <iframe src="https://www.youtube.com/embed/mYF7ibt-GyI?si=JO4xt0DCPJ19z-vK" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
         <div id="tree">
+            <div class="contenedor">
+                <hr>
+                <section id="arboles">
+                    <h2><strong>Nuestros árboles respiran en Mar del Plata</strong></h2>
+                    <div id="arbol">
+                        <div class="fotoarbol" id="arbol3"></div>
+                        <div class="fotoarbol" id="arbol4"></div>
+                        <div class="fotoarbol" id="arbol5"></div>
+                        <div class="fotoarbol" id="arbol6"></div>
+                        <div class="fotoarbol" id="arbol7"></div>
+                        <div class="fotoarbol" id="arbol8"></div>
+                    </div>
+                    <p>Los árboles que cultivamos en VIVERO MARTINEZ no solo embellecen calles y jardines: <b>purifican
+                            el
+                            aire,
+                            regulan la temperatura urbana y atraen biodiversidad</b>. Son aliados silenciosos del
+                        bienestar
+                        de
+                        Mar del
+                        Plata.
+                        Desde especies nativas como el Jacarandá, el Lapacho rosado y el Ceibo, hasta ejemplares nobles
+                        como
+                        el
+                        Timbó o el Aguaribay, cada árbol es una promesa de sombra, vida y futuro más verde para la
+                        ciudad.
+                    </p>
+                </section>
 
+                <aside></aside>
 
-            <hr>
+                <div id="premio">
+                    <article class="reco">
+                        <h4>🏆 Premio “Raíz Urbana 2023” – Revista Jardines Argentinos</h4>
+                        <p>“VIVERO MARTINEZ ha demostrado que la tradición y la sostenibilidad pueden florecer juntas en
+                            pleno corazón urbano. Con más de 1500 m² de vegetación activa, este vivero familiar ha sido
+                            galardonado por su impacto en la regeneración ambiental de Mar del Plata. Destacamos
+                            especialmente su colección de árboles nativos como el Ceibo, el Lapacho y el Jacarandá,
+                            todos
+                            cultivados con técnicas responsables y pasión heredada. Un oasis verde que inspira.”</p>
+                        <address>Autor: Jose Luis Pepe - email: pepe@gmail.com - tel:1154669987</address>
+                    </article>
 
-
-            <section id="arboles">
-                <h2><strong>Nuestros árboles respiran en Mar del Plata</strong></h2>
-
-                <div id="arbol">
-                    <!--
-                   <div class="fotoarbol" id="arbol1"></div>
-                <div class="fotoarbol" id="arbol2"></div>
-                -->
-
-                    <div class="fotoarbol" id="arbol3"></div>
-                    <div class="fotoarbol" id="arbol4"></div>
-                    <div class="fotoarbol" id="arbol5"></div>
-                    <div class="fotoarbol" id="arbol6"></div>
-                    <div class="fotoarbol" id="arbol7"></div>
-                    <div class="fotoarbol" id="arbol8"></div>
-
-
+                    <article class="reco">
+                        <h4>🏆 Reconocimiento “Pulmón Verde de la Ciudad” – Diario EcoMar (2024)</h4>
+                        <p>“En tiempos donde la conciencia ecológica es clave, el vivero marplatense VIVERO MARTINEZ se
+                            alza
+                            como referente local. Su variedad de plantas de estación y árboles autóctonos no solo
+                            enriquece
+                            los
+                            espacios verdes de la ciudad, sino que mejora la calidad del aire y promueve la
+                            biodiversidad
+                            urbana. El esfuerzo de esta familia, activa desde hace generaciones, ha sido reconocido por
+                            su
+                            incansable labor educativa y ecológica.”</p>
+                        <address>Autor: Jose Luis Pepe - email: pepe@gmail.com - tel:1154669987</address>
+                    </article>
                 </div>
 
-                <p>Los árboles que cultivamos en VIVERO MARTINEZ no solo embellecen calles y jardines: <b>purifican el
-                        aire,
-                        regulan la temperatura urbana y atraen biodiversidad</b>. Son aliados silenciosos del bienestar
-                    de
-                    Mar del
-                    Plata.
-                    Desde especies nativas como el Jacarandá, el Lapacho rosado y el Ceibo, hasta ejemplares nobles como
-                    el
-                    Timbó o el Aguaribay, cada árbol es una promesa de sombra, vida y futuro más verde para la ciudad.
-                </p>
+                <hr>
 
-
-
-            </section>
-
-            <aside>
-
-
-            </aside>
-
-
-            <div id="premio">
-                <article class="reco">
-                    <h4>🏆 Premio “Raíz Urbana 2023” – Revista Jardines Argentinos</h4>
-
-                    <p>“VIVERO MARTINEZ ha demostrado que la tradición y la sostenibilidad pueden florecer juntas en
-                        pleno corazón urbano. Con más de 1500 m² de vegetación activa, este vivero familiar ha sido
-                        galardonado por su impacto en la regeneración ambiental de Mar del Plata. Destacamos
-                        especialmente su colección de árboles nativos como el Ceibo, el Lapacho y el Jacarandá, todos
-                        cultivados con técnicas responsables y pasión heredada. Un oasis verde que inspira.”</p>
-
-                    <address>Autor: Jose Luis Pepe - email: pepe@gmail.com - tel:1154669987</address>
-
-                </article>
-
-                <article class="reco">
-
-                    <h4>🏆 Reconocimiento “Pulmón Verde de la Ciudad” – Diario EcoMar (2024)
-                    </h4>
-
-                    <p>“En tiempos donde la conciencia ecológica es clave, el vivero marplatense VIVERO MARTINEZ se alza
-                        como referente local. Su variedad de plantas de estación y árboles autóctonos no solo enriquece
-                        los
-                        espacios verdes de la ciudad, sino que mejora la calidad del aire y promueve la biodiversidad
-                        urbana. El esfuerzo de esta familia, activa desde hace generaciones, ha sido reconocido por su
-                        incansable labor educativa y ecológica.”</p>
-
-                    <address>Autor: Jose Luis Pepe - email: pepe@gmail.com - tel:1154669987</address>
-
-                </article>
+                <section id="contacto">
+                    <h2 style="color: #51381e;">¡Visítanos, te esperamos!</h2>
+                    <p><strong>Boulevard del Bosque, Dentro del Bosque Peralta Ramos en Mar del Plata</strong></p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.0231736745154!2d-57.56189892410252!3d-38.06984142191251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de02008e69bf%3A0x55cfece13d1f835e!2sBosque%20Peralta%20Ramos!5e0!3m2!1ses-419!2sar!4v1747936593059!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
             </div>
-
-
-            <hr>
-
-            <section id="contacto">
-                <h2 style="color: #51381e;">¡Visítanos, te esperamos!</h2>
-                <p><strong>Boulevard del Bosque, Dentro del Bosque Peralta Ramos en Mar del Plata</strong></p>
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.0231736745154!2d-57.56189892410252!3d-38.06984142191251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de02008e69bf%3A0x55cfece13d1f835e!2sBosque%20Peralta%20Ramos!5e0!3m2!1ses-419!2sar!4v1747936593059!5m2!1ses-419!2sar"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </section>
-
-
+        </div>
     </main>
 
-
-
-
-
-
     <footer>
-        <h2 style="color:white; text-align: center;">¡Seguinos!</h2>
-        <br>
-
-        <div id="redes">
-            <a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram.icon.svg"
-                    alt="Instagram"></a>
-            <a href="https://www.youtube.com/watch?v=FDNsSDNTIAg&t=2372s" target="_blank"> <img
-                    src="imagenes/youtube.icon.svg" alt="Canal de youtube"></a>
+        <div class="contenedor">
+            <h2 style="color:white; text-align: center;">¡Seguinos!</h2>
+            <br>
+            <div id="redes">
+                <a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram.icon.svg"
+                        alt="Instagram"></a>
+                <a href="https://www.youtube.com/watch?v=FDNsSDNTIAg&t=2372s" target="_blank"><img
+                        src="imagenes/youtube.icon.svg" alt="Canal de youtube"></a>
+            </div>
+            <br>
+            <hr>
+            <p style="color:white; text-align: center;">¡Te Esperamos! <br>De Lunes a Viernes de 8:30 a 22:00 hs.</p>
+            <hr>
+            <p style="color:white; text-align: center;">Vivero Martinez&copy; - Boulevard del Bosque - Bosque Peralta
+                Ramos - Mar del Plata - Provincia de Buenos Aires <br>Todos los derechos reservados 2025.</p>
         </div>
-        <br>
-        <hr>
-
-        <p style="color:white; text-align: center;">¡Te Esperamos! <br>De Lunes a Viernes de 8:30 a 22:00 hs.</p>
-
-        <hr>
-        <p style="color:white; text-align: center;">Vivero Martinez&copy; - Boulevard del Bosque - Bosque Peralta Ramos
-            - Mar del Plata - Provincia de
-            Buenos Aires <br>Todos los derechos reservados 2025.</p>
-
-
-
     </footer>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const links = menu.querySelectorAll('a');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('show');
+            });
+        });
+    </script>
 
 </body>
 
