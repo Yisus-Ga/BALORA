@@ -1,203 +1,741 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-AR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🪴VIVERO MARTÍNEZ - Plantas y árboles de estación</title>
-    <meta name="description"
-        content="Vivero familiar con historia en Mar del Plata. Plantas y árboles de estación, conciencia ecológica y tradición.">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BÄLORA | Medicina estética integral</title>
 
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (opcional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 
 
 </head>
 
-<body>
-    <nav>
-        <div id="logouno">
-            <img src="imagenes/BANNERcopia2.PNG" alt="LOGO VIVERO">
-        </div>
+<body class="bg-light">
 
-        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <!-- Header / nav-Menu de navegacion -->
 
+    <header class="Header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BÄLORA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#services">Tratamientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
 
-        <ul id="menu">
-            <li><a href="#bienvenidos">NOSOTROS</a></li>
-            <li><a href="#plantin">PLANTAS</a></li>
-            <li><a href="#tree">ARBOLES</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-        </ul>
-    </nav>
-
-
-    <div id="relleno"></div>
-    <header></header>
-    <hr>
-
-    <main>
-        <div class="contenedor">
-            <a id="wpp" href="https://wa.me/5491154902893" target="_blank"><img src="imagenes/wpp.svg"
-                    alt="Whatsapp"></a>
-            <h1 id="bienvenidos">Bienvenidos a Vivero Martinez <br> el más completo de Mar del Plata</h1>
-            <section id="nosotros">
-                <div id="infoHistoria">
-                    <h2>Nuestra Historia</h2>
-                    <p>En el corazón palpitante de Mar del Plata, donde el cemento parece ganar terreno, <strong>VIVERO
-                            MARTINEZ</strong>
-                        resiste como un pulmón verde, vivo y ancestral. Su origen se remonta a principios del siglo XX,
-                        cuando <b>Don Julián Martínez</b>, apasionado por las plantas y los secretos de la tierra,
-                        decidió
-                        plantar
-                        su primer árbol en este mismo suelo. Desde entonces, cada generación de la familia Martínez ha
-                        heredado no solo el amor por la
-                        jardinería, sino un compromiso sagrado: <b>cultivar vida y purificar el aire de Mar del
-                            Plata</b>.
-                        Con más
-                        de 1500 m² de naturaleza viva, nuestro vivero es un refugio para quienes buscan volver
-                        a conectarse con lo natural, lo auténtico y lo esencial. <br>Hoy, <b>VIVERO MARTINEZ</b> es un
-                        símbolo de resistencia ecológica, tradición familiar y belleza orgánica.
-                        Aquí no solo se venden plantas y árboles: <strong>se siembra conciencia, se respira
-                            futuro</strong>.
-                    </p>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="fotoHistoria">
-                    <img src="imagenes/svg2.svg" alt="imagen ilustrativa con un arbol">
-                </div>
-            </section>
-        </div>
-
-        <hr id="plantin">
-
-        <div class="contenedor">
-            <section id="destacados">
-                <h2><strong>Plantas destacadas de la temporada</strong></h2>
-                <div id="plantas">
-                    <div class="fotoplanta" id="p1"></div>
-                    <div class="fotoplanta" id="p2"></div>
-                    <div class="fotoplanta" id="p3"></div>
-                    <div class="fotoplanta" id="p4"></div>
-                    <div class="fotoplanta" id="p5"></div>
-                    <div class="fotoplanta" id="p6"></div>
-                    <div class="fotoplanta" id="p7"></div>
-                    <div class="fotoplanta" id="p8"></div>
-                </div>
-            </section>
-        </div>
-
-        <div class="contenedor">
-            <iframe src="https://www.youtube.com/embed/mYF7ibt-GyI?si=JO4xt0DCPJ19z-vK" frameborder="0"
-                allowfullscreen></iframe>
-        </div>
-
-        <div id="tree">
-            <div class="contenedor">
-                <hr>
-                <section id="arboles">
-                    <h2><strong>Nuestros árboles respiran en Mar del Plata</strong></h2>
-                    <div id="arbol">
-                        <div class="fotoarbol" id="arbol3"></div>
-                        <div class="fotoarbol" id="arbol4"></div>
-                        <div class="fotoarbol" id="arbol5"></div>
-                        <div class="fotoarbol" id="arbol6"></div>
-                        <div class="fotoarbol" id="arbol7"></div>
-                        <div class="fotoarbol" id="arbol8"></div>
-                    </div>
-                    <p>Los árboles que cultivamos en VIVERO MARTINEZ no solo embellecen calles y jardines: <b>purifican
-                            el
-                            aire,
-                            regulan la temperatura urbana y atraen biodiversidad</b>. Son aliados silenciosos del
-                        bienestar
-                        de
-                        Mar del
-                        Plata.
-                        Desde especies nativas como el Jacarandá, el Lapacho rosado y el Ceibo, hasta ejemplares nobles
-                        como
-                        el
-                        Timbó o el Aguaribay, cada árbol es una promesa de sombra, vida y futuro más verde para la
-                        ciudad.
-                    </p>
-                </section>
-
-                <aside></aside>
-
-                <div id="premio">
-                    <article class="reco">
-                        <h4>🏆 Premio “Raíz Urbana 2023” – Revista Jardines Argentinos</h4>
-                        <p>“VIVERO MARTINEZ ha demostrado que la tradición y la sostenibilidad pueden florecer juntas en
-                            pleno corazón urbano. Con más de 1500 m² de vegetación activa, este vivero familiar ha sido
-                            galardonado por su impacto en la regeneración ambiental de Mar del Plata. Destacamos
-                            especialmente su colección de árboles nativos como el Ceibo, el Lapacho y el Jacarandá,
-                            todos
-                            cultivados con técnicas responsables y pasión heredada. Un oasis verde que inspira.”</p>
-                        <address>Autor: Jose Luis Pepe - email: pepe@gmail.com - tel:1154669987</address>
-                    </article>
-
-                    <article class="reco">
-                        <h4>🏆 Reconocimiento “Pulmón Verde de la Ciudad” – Diario EcoMar (2024)</h4>
-                        <p>“En tiempos donde la conciencia ecológica es clave, el vivero marplatense VIVERO MARTINEZ se
-                            alza
-                            como referente local. Su variedad de plantas de estación y árboles autóctonos no solo
-                            enriquece
-                            los
-                            espacios verdes de la ciudad, sino que mejora la calidad del aire y promueve la
-                            biodiversidad
-                            urbana. El esfuerzo de esta familia, activa desde hace generaciones, ha sido reconocido por
-                            su
-                            incansable labor educativa y ecológica.”</p>
-                        <address>Autor: Jose Luis Pepe - email: pepe@gmail.com - tel:1154669987</address>
-                    </article>
-                </div>
-
-                <hr>
-
-                <section id="contacto">
-                    <h2 style="color: #51381e;">¡Visítanos, te esperamos!</h2>
-                    <p><strong>Boulevard del Bosque, Dentro del Bosque Peralta Ramos en Mar del Plata</strong></p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.0231736745154!2d-57.56189892410252!3d-38.06984142191251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de02008e69bf%3A0x55cfece13d1f835e!2sBosque%20Peralta%20Ramos!5e0!3m2!1ses-419!2sar!4v1747936593059!5m2!1ses-419!2sar"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </section>
             </div>
+        </nav>
+    </header>
+
+
+    <!-- ASIDE / HERO (placeholder; reemplazalo por tu carousel) -->
+
+
+    <aside class="hero-placeholder" role="region" aria-label="Hero">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Bienvenido a BÄLORA Clínica Estética Integral</h1>
+            <p class="lead">Tratamientos personalizados con tecnología de vanguardia y un equipo profesional.</p>
+            <a href="#services" class="btn btn-lg btn-primary mt-3">Ver tratamientos</a>
         </div>
+    </aside>
+
+
+    <!-- MAIN -->
+
+
+    <main class="container">
+        <!-- SECCIÓN 1: services -->
+        <section id="services" class="mb-5">
+            <header class="mb-4 text-center">
+                <h2 class="h3 fw-bold">Nuestros Tratamientos</h2>
+                <p class="text-muted mb-0">Soluciones personalizadas para belleza y bienestar</p>
+            </header>
+
+            <!-- Grid responsivo de cards -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Card 1 -->
+                <article class="col">
+                    <div class="card treatment-card h-100" role="article">
+                        <img src="./imagenes/servicio1.png" class="card-img-top" alt="Tratamiento facial"
+                            loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Dermatología Clínica</h3>
+                            <p class="card-text text-muted mb-3">Procedimientos no invasivos para mejorar textura,
+                                firmeza y luminosidad.</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalTrat1" aria-controls="modalTrat1">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="col">
+                    <div class="card treatment-card h-100">
+                        <img src="./imagenes/servicio2.png" class="card-img-top" alt="Tratamiento corporal"
+                            loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Estética Médica Y Cuidado De La Piel</h3>
+                            <p class="card-text text-muted mb-3">Técnicas de modelado y reducción localizada con equipos
+                                aprobados.</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalTrat2">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="col">
+                    <div class="card treatment-card h-100">
+                        <img src="./imagenes/servicio3.png" class="card-img-top" alt="Tratamiento capilar"
+                            loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Estética Corporal</h3>
+                            <p class="card-text text-muted mb-3">Planes personalizados para caída y fortalecimiento del
+                                cabello.</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalTrat3">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 4 -->
+
+                <article class="col">
+                    <div class="card treatment-card h-100">
+                        <img src="./imagenes/servicio4.png" class="card-img-top" alt="Tratamiento capilar"
+                            loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Cirugía Estética</h3>
+                            <p class="card-text text-muted mb-3">Planes personalizados para caída y fortalecimiento del
+                                cabello.</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalTrat4">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 5 -->
+
+                <article class="col">
+                    <div class="card treatment-card h-100">
+                        <img src="./imagenes/servicio5.png" class="card-img-top" alt="Tratamiento capilar"
+                            loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Nutrición Integral</h3>
+                            <p class="card-text text-muted mb-3">Planes personalizados para caída y fortalecimiento del
+                                cabello.</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalTrat5">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+
+                <article class="col">
+                    <div class="card treatment-card h-100">
+                        <img src="./imagenes/servicio6.png" class="card-img-top" alt="Tratamiento capilar"
+                            loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Servicios Complementarios</h3>
+                            <p class="card-text text-muted mb-3">Planes personalizados para caída y fortalecimiento del
+                                cabello.</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalTrat6">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Más cards: duplicar según necesites -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: about/SOBRE LA CLÍNICA -->
+        <section id="about" class="py-5 bg-white">
+            <div class="container">
+                <header class="mb-4 text-center">
+                    <h2 class="h3 fw-bold">Sobre Nuestra Clínica</h2>
+                    <p class="text-muted mb-0">Cuidamos tu belleza y bienestar con ciencia, tecnología y experiencia
+                        médica</p>
+                </header>
+
+                <div class="row align-items-center g-5">
+                    <!-- Columna texto -->
+                    <div class="col-md-6">
+                        <h3 class="h5 fw-semibold mb-3">Clínica Estética Integral</h3>
+                        <p>
+                            Somos un centro especializado en tratamientos faciales, corporales y capilares, con un
+                            enfoque integral en la salud y estética de cada paciente.
+                            Nuestro equipo médico está formado por profesionales certificados que utilizan tecnología de
+                            vanguardia para obtener resultados naturales y duraderos.
+                        </p>
+                        <p>
+                            En nuestras instalaciones encontrarás un ambiente cálido, seguro y confidencial, pensado
+                            para tu comodidad. Creemos en la personalización de cada tratamiento,
+                            adaptando cada procedimiento a las necesidades específicas de tu piel y cuerpo.
+                        </p>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Más de 10 años de trayectoria
+                            </li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Equipos aprobados</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Atención personalizada y
+                                confidencial</li>
+                        </ul>
+                        <a href="#team" class="btn btn-primary mt-3">Conocé a nuestro equipo</a>
+                    </div>
+
+                    <!-- Columna imagen -->
+                    <div class="col-md-6">
+                        <figure class="m-0">
+                            <img src="./imagenes/imagen_clinica.jpeg" class="img-fluid rounded-4 shadow-sm"
+                                alt="Instalaciones de la clínica" loading="lazy">
+                            <figcaption class="text-muted small mt-2 text-center">Nuestras instalaciones, diseñadas para
+                                tu confort</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: team/EQUIPO -->
+        <section id="team" class="py-5">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h2 class="h3 fw-bold">Nuestro Equipo Profesional</h2>
+                    <p class="text-muted mb-0">Especialistas comprometidos con tu bienestar y belleza</p>
+                </header>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <!-- Miembro 1 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm team-card text-center">
+                            <img src="./imagenes/AGOS.jpg" alt="Dra. Laura Martínez" class="team-photo mt-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1 fw-semibold">Dra. Agostina Ognio</h5>
+                                <p class="text-primary mb-1 small">Médica Dermatóloga</p>
+                                <p class="card-text text-muted small">
+                                    Especialista en tratamientos faciales y rejuvenecimiento no invasivo. Más de 12 años
+                                    de experiencia.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-3">
+                                <a href="#" class="text-secondary mx-2"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-secondary mx-2"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 2 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm team-card text-center">
+                            <img src="./imagenes/JP.jpg" alt="Dr. Andrés Pérez" class="team-photo mt-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1 fw-semibold">Dr. Juan Pablo Pratesi</h5>
+                                <p class="text-primary mb-1 small">Cirujano Plástico</p>
+                                <p class="card-text text-muted small">
+                                    Experto en tratamientos dermatológicos y control de envejecimiento cutáneo.
+                                    Expositor internacional.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-3">
+                                <a href="#" class="text-secondary mx-2"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-secondary mx-2"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 3 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm team-card text-center">
+                            <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="Lic. Sofía Rivas"
+                                class="team-photo mt-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1 fw-semibold">Lic. Sofía Rivas</h5>
+                                <p class="text-primary mb-1 small">Cosmetóloga y Nutricionista</p>
+                                <p class="card-text text-muted small">
+                                    Combina salud nutricional con tratamientos estéticos para lograr resultados
+                                    integrales.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-3">
+                                <a href="#" class="text-secondary mx-2"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-secondary mx-2"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: galeria/GALERÍA -->
+        <section id="galeria" class="py-5 bg-light">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h2 class="h3 fw-bold">Resultados Antes & Después</h2>
+                    <p class="text-muted mb-0">Transformaciones reales logradas por nuestro equipo</p>
+                </header>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Imagen 1 -->
+                    <div class="col">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 1">
+                            <div class="overlay">
+                                <span>Antes / Después</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 2 -->
+                    <div class="col">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 2">
+                            <div class="overlay">
+                                <span>Antes / Después</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 3 -->
+                    <div class="col">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 3">
+                            <div class="overlay">
+                                <span>Antes / Después</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 4 -->
+                    <div class="col">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 1">
+                            <div class="overlay">
+                                <span>Antes / Después</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 5 -->
+                    <div class="col">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 1">
+                            <div class="overlay">
+                                <span>Antes / Después</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 6 -->
+                    <div class="col">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 1">
+                            <div class="overlay">
+                                <span>Antes / Después</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: faq/PREGUNTAS FRECUENTES -->
+        <section id="faq" class="py-5 bg-light">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h2 class="h3 fw-bold">Preguntas Frecuentes</h2>
+                    <p class="text-muted mb-0">Resolvemos las dudas más comunes sobre nuestros tratamientos y servicios
+                    </p>
+                </header>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqAccordion">
+
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item mb-3 border-0 shadow-sm">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        ¿Los tratamientos estéticos son dolorosos?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        La mayoría de los procedimientos son mínimamente invasivos y se realizan con
+                                        anestesia tópica para garantizar tu comodidad. Nuestros profesionales priorizan
+                                        siempre la seguridad y el bienestar del paciente.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item mb-3 border-0 shadow-sm">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        ¿Cuánto duran los resultados?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Depende del tratamiento. Algunos, como el ácido hialurónico o la toxina
+                                        botulínica, tienen efectos que duran entre 6 y 12 meses. Otros, como los
+                                        tratamientos corporales, requieren mantenimiento periódico.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item mb-3 border-0 shadow-sm">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        ¿Se necesita una consulta previa?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Sí. En la primera cita evaluamos tu tipo de piel, antecedentes médicos y
+                                        objetivos estéticos para diseñar un plan personalizado. Es un paso esencial
+                                        antes de iniciar cualquier tratamiento.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item mb-3 border-0 shadow-sm">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        ¿Puedo combinar diferentes tratamientos?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Absolutamente. Muchos tratamientos pueden combinarse para potenciar los
+                                        resultados. Nuestros especialistas te orientarán según tus necesidades y
+                                        expectativas.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 7: contacto/CONTACTO -->
+        <section id="contacto" class="py-5 bg-white">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h2 class="h3 fw-bold">Contacto y Ubicación</h2>
+                    <p class="text-muted mb-0">Encontranos en nuestra clínica o escribinos directamente</p>
+                </header>
+
+                <div class="row align-items-center g-4">
+
+                    <!-- Columna Izquierda: Mapa -->
+                    <div class="col-lg-6">
+                        <div class="ratio ratio-16x9 shadow-sm rounded-4 overflow-hidden">
+                            <!-- Inserta aquí el embed de Google Maps -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.8053590417912!2d-58.86855252353672!3d-34.45708844977052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9c67a1a8289b%3A0x1668fe323eeac107!2sKm.%2050!5e0!3m2!1ses-419!2sar!4v1760834926949!5m2!1ses-419!2sar"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Datos de Contacto -->
+                    <div class="col-lg-6">
+                        <div class="p-4 rounded-4 bg-light shadow-sm">
+                            <h4 class="fw-semibold mb-3">BÄLORA | Medicina estética integral</h4>
+
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Panamericana Km
+                                    50 – Pilar</li>
+                                <li class="mb-2"><i class="bi bi-clock text-primary me-2"></i> Lunes a Sábados de 9:00 a
+                                    19:00 hs</li>
+                                <li class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i> <a
+                                        href="mailto:baloramed@gmail.com"
+                                        class="text-decoration-none text-dark">baloramed@gmail.com</a></li>
+                                <li><i class="bi bi-whatsapp text-success me-2"></i> <a
+                                        href="https://wa.me/5491158416049" target="_blank"
+                                        class="text-decoration-none text-dark">+54 9 11 58 416 049</a></li>
+                            </ul>
+
+                            <div class="d-flex gap-3 mt-3">
+                                <a href="https://wa.me/5491158416049" target="_blank"
+                                    class="btn btn-success rounded-pill px-4">
+                                    <i class="bi bi-whatsapp me-2"></i>Chatear por WhatsApp
+                                </a>
+                                <a href="mailto:baloramed@gmail.com" target="_blank"
+                                    class="btn btn-outline-primary rounded-pill px-4">
+                                    <i class="bi bi-envelope me-2"></i>Enviar Email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
-    <footer>
-        <div class="contenedor">
-            <h2 style="color:white; text-align: center;">¡Seguinos!</h2>
-            <br>
-            <div id="redes">
-                <a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram.icon.svg"
-                        alt="Instagram"></a>
-                <a href="https://www.youtube.com/watch?v=FDNsSDNTIAg&t=2372s" target="_blank"><img
-                        src="imagenes/youtube.icon.svg" alt="Canal de youtube"></a>
+
+
+    <!-- MODALES (detalles de tratamientos) -->
+    <div class="modal fade" id="modalTrat1" tabindex="-1" aria-labelledby="modalTrat1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat1Label">Rejuvenecimiento Facial — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio1.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Descripción amplia del tratamiento, beneficios, duración, número de sesiones recomendadas y
+                        contraindicaciones.</p>
+                    <ul>
+                        <li>Duración: 45-60 minutos</li>
+                        <li>Recuperación mínima</li>
+                        <li>Resultados: progresivos</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <br>
-            <hr>
-            <p style="color:white; text-align: center;">¡Te Esperamos! <br>De Lunes a Viernes de 8:30 a 22:00 hs.</p>
-            <hr>
-            <p style="color:white; text-align: center;">Vivero Martinez&copy; - Boulevard del Bosque - Bosque Peralta
-                Ramos - Mar del Plata - Provincia de Buenos Aires <br>Todos los derechos reservados 2025.</p>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modalTrat2" tabindex="-1" aria-labelledby="modalTrat2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat2Label">Contorno Corporal — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Descripción general del tratamiento corporal.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modalTrat3" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio1.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Descripción general del tratamiento capilar.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modalTrat4" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Descripción general del tratamiento capilar.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="modalTrat5" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio1.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Descripción general del tratamiento capilar.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="modalTrat6" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Descripción general del tratamiento capilar.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="border-top mt-5">
+        <div class="container py-5">
+            <div class="row gy-4">
+                <div class="col-md-4 text-center text-md-start">
+                    <a class="d-inline-block mb-3 fw-bold text-decoration-none" href="#">
+                        <span class="ms-0">BÄLORA | Medicina estética integral</span>
+                    </a>
+                    <p class=" small mb-0">Equipo médico especializado</p>
+                </div>
+
+                <div class="col-md-3 text-center text-md-start">
+                    <h6 class="fw-semibold">Enlaces</h6>
+                    <ul class="list-unstyled small">
+                        <li><a class="text-decoration-none" href="#services">Servicios</a></li>
+                        <li><a class="text-decoration-none" href="#about">Nosotros</a></li>
+                        <li><a class="text-decoration-none" href="#team">Equipo</a></li>
+                        <li><a class="text-decoration-none" href="#galeria">Galeria</a></li>
+                        <li><a class="text-decoration-none" href="#faq">Preguntas</a></li>
+                        <li><a class="text-decoration-none" href="#faq">Contacto</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3 text-center text-md-start">
+                    <h6 class="fw-semibold">Contacto</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Panamericana Km 50 – Pilar</li>
+                        <li class="mb-2"><i class="bi bi-clock me-2"></i>Lu - Sá: 9:00 - 19:00</li>
+                        <li class="mb-2"><i class="bi bi-whatsapp me-2 text-success"></i><a
+                                class="text-decoration-none" href="https://wa.me/5491158416049"
+                                target="_blank">+54 9 11 58
+                                416 049</a></li>
+                        <li><i class="bi bi-envelope-fill me-2"></i><a class="text-decoration-none"
+                                href="mailto:baloramed@gmail.com" target="_blank">baloramed@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 text-center text-md-start">
+                    <h6 class="fw-semibold">Redes</h6>
+                    <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+                        <a class="btn btn-outline-secondary btn-lg rounded-circle p-2"
+                            href="https://www.instagram.com/baloramed?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a class="btn btn-outline-secondary btn-lg rounded-circle p-2" href="#" aria-label="LinkedIn"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-secondary btn-lg rounded-circle p-2" href="#" aria-label="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 ">
+                <div class="col-12 text-center small">
+                    &copy; <span id="footerYear"></span> BÄLORA | Medicina estética integral. Todos los derechos
+                    reservados.
+                </div>
+            </div>
         </div>
     </footer>
 
+
+    <!-- Bootstrap JS (Popper incluido) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const toggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-        const links = menu.querySelectorAll('a');
-
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('show');
-        });
-
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('show');
-            });
-        });
+        // Año dinámico
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-
 </body>
 
 </html>

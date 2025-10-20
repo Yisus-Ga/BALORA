@@ -1,0 +1,302 @@
+/* ====== VARIABLES DE BOOTSTRAP PERSONALIZADAS ====== */
+:root {
+    /* Fondo y texto general */
+    --bs-body-bg: #f4f4f2;
+    --bs-body-color: #333333;
+
+    /* Paleta personalizada */
+    --bs-primary: #8b5e3c;
+    /* Marrón suave */
+    --bs-secondary: #a98467;
+    /* Marrón claro */
+    --bs-success: #7a9e7e;
+    /* Verde natural */
+    --bs-info: #c2d3c0;
+    /* Verde grisáceo */
+    --bs-light: #ffffff;
+    --bs-dark: #2f2f2f;
+
+    /* Opcional: bordes y links */
+    --bs-border-color: #ddd;
+    --bs-link-color: var(--bs-primary);
+    --bs-link-hover-color: #6f472f;
+}
+
+/* ====== Personalización visual adicional ====== */
+
+/* Fondo del body */
+body {
+    padding-top: 56px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #6f472f;
+    border-color: #6f472f;
+    color: var(--bs-info) !important;
+}
+.btn-outline-primary:hover {
+    background-color: #6f472f;
+    border-color: #6f472f;
+    color: var(--bs-info) !important;
+}
+
+.btn-primary:focus, .btn-primary:active:focus {
+    background-color: #6f472f;
+    border-color: #6f472f;
+    color: var(--bs-info) !important;
+}
+
+
+.btn-success {
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+}
+
+.btn-success:hover {
+    background-color: #648a68;
+    border-color: #648a68;
+}
+
+.btn-outline-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #fff !important;
+    ;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6f472f;
+    border-color: #6f472f;
+    color: var(--bs-info) !important;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary:active:focus {
+    background-color: #6f472f;
+    border-color: #6f472f;
+    color: var(--bs-info) !important;
+}
+
+.text-primary{
+    color: var(--bs-primary) !important;
+}
+
+
+
+/* NAVBAR / MENU */
+.navbar {
+    background-color: var(--bs-secondary) !important;
+}
+
+.navbar a.nav-link,
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar a.nav-link:hover {
+    color: var(--bs-info) !important;
+}
+
+
+
+
+/* HERO/ASIDE*/
+.hero-placeholder {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .15)), url(../imagenes/fondo_hero.png) center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/* Espaciado principal */
+main {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+/* Cards y secciones */
+.card {
+    background-color: var(--bs-light);
+    border: 1px solid #eaeaea;
+    border-radius: 0.75rem;
+}
+
+
+/*    <!-- SECCIÓN 1: services -->*/
+.treatment-card {
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.treatment-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Modal imagen responsiva */
+.modal-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* ==== SECCIÓN EQUIPO ==== */
+
+.team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo {
+    width: 130px;
+    /* tamaño del círculo */
+    height: 130px;
+    object-fit: cover;
+    /* recorte natural sin distorsión */
+    border-radius: 50%;
+    /* forma circular */
+    margin: 0 auto;
+    /* centra la imagen */
+    display: block;
+    /* asegura centrado vertical */
+    box-shadow: 0 0 0 4px #f8f9fa, 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* borde elegante */
+}
+
+
+
+
+
+
+
+
+/* ==== GALERÍA ==== */
+.gallery-card img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.gallery-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* ==== SECCIÓN FAQ ==== */
+
+#faq .accordion-button {
+    background-color: #fff;
+    color: #333;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    background-color: var(--bs-secondary) !important;
+    color: #fff !important;
+    box-shadow: none;
+}
+
+#faq .accordion-item {
+    border-radius: 0.5rem;
+
+}
+
+#faq .accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+            box-shadow: 0 0 0 0.25rem var(--bs-success) !important; /* Usa tu color primario con opacidad */
+
+}
+
+/* ==== SECCIÓN CONTACTO ==== */
+
+#contacto h4 {
+    color: grey;
+}
+
+#contacto a:hover {
+    color:  var(--bs-info);
+        text-decoration: underline;
+}
+
+#contacto iframe {
+    filter: grayscale(20%) brightness(95%);
+    transition: filter 0.4s ease;
+}
+
+#contacto iframe:hover {
+    filter: grayscale(0%) brightness(100%);
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--bs-secondary);
+    color: #fff;
+    font-size: 0.95rem;
+
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+
+    color: var(--bs-primary);
+    /* respeta el color primario de Bootstrap o el que hayas personalizado */
+    text-decoration: none;
+}
+
+footer .btn-outline-secondary {
+    border-color: rgba(0, 0, 0, 0.06);
+     color: #fff;
+}
