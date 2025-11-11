@@ -39,20 +39,22 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #6f472f;
+    background-color: var(--bs-info) !important;
     border-color: #6f472f;
-    color: var(--bs-info) !important;
-}
-.btn-outline-primary:hover {
-    background-color: #6f472f;
-    border-color: #6f472f;
-    color: var(--bs-info) !important;
+    color: #6f472f;
 }
 
-.btn-primary:focus, .btn-primary:active:focus {
+.btn-outline-primary:hover {
+    background-color: var(--bs-info) !important;
+    border-color: #6f472f;
+    color: #6f472f !important;
+}
+
+.btn-primary:focus,
+.btn-primary:active:focus {
     background-color: #6f472f;
     border-color: #6f472f;
-    color: var(--bs-info) !important;
+    color: #fff !important;
 }
 
 
@@ -74,18 +76,19 @@ body {
 }
 
 .btn-outline-primary:hover {
-    background-color: #6f472f;
+    background-color: var(--bs-info) !important;
     border-color: #6f472f;
-    color: var(--bs-info) !important;
+    color: #6f472f;
 }
 
-.btn-outline-primary:focus, .btn-outline-primary:active:focus {
+.btn-outline-primary:focus,
+.btn-outline-primary:active:focus {
     background-color: #6f472f;
     border-color: #6f472f;
-    color: var(--bs-info) !important;
+    color: #fff !important;
 }
 
-.text-primary{
+.text-primary {
     color: var(--bs-primary) !important;
 }
 
@@ -95,6 +98,8 @@ body {
 .navbar {
     background-color: var(--bs-secondary) !important;
 }
+
+
 
 .navbar a.nav-link,
 .navbar-brand {
@@ -114,9 +119,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .15)), url(../imagenes/fondo_hero.png) center/cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .15)), url(../imagenes/fondo_hero.jpg) center/cover no-repeat;
     color: #fff;
     text-align: center;
+
 }
 
 
@@ -135,8 +141,15 @@ main {
     border-radius: 0.75rem;
 }
 
+/*    <!-- SECCIÓN 1: NOSOTROS -->*/
 
-/*    <!-- SECCIÓN 1: services -->*/
+
+
+/*    <!-- SECCIÓN 2: TRATAMIENTOS -->*/
+
+#services {margin-top: 5rem;}
+
+
 .treatment-card {
     transition: transform .18s ease, box-shadow .18s ease;
 }
@@ -146,6 +159,8 @@ main {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
+
+
 /* Modal imagen responsiva */
 .modal-img {
     width: 100%;
@@ -154,11 +169,27 @@ main {
 }
 
 
+/* ==== SECCIÓN 3: EXILIS ==== */
+.before-after {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* cuadrado perfecto, se ajusta bien en grillas */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.before-after:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Espaciado general de la grilla */
+.before-after-grid {
+  justify-content: center;
+}
 
 
 
-
-/* ==== SECCIÓN EQUIPO ==== */
+/* ==== SECCIÓN 4: EQUIPO ==== */
 
 .team-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -188,12 +219,7 @@ main {
 
 
 
-
-
-
-
-
-/* ==== GALERÍA ==== */
+/* ==== SECCIÓN 5: GALERÍA ==== */
 .gallery-card img {
     transition: transform 0.4s ease, filter 0.4s ease;
 }
@@ -224,11 +250,7 @@ main {
 
 
 
-
-
-
-
-/* ==== SECCIÓN FAQ ==== */
+/* ==== SECCIÓN 6: FAQ ==== */
 
 #faq .accordion-button {
     background-color: #fff;
@@ -250,19 +272,20 @@ main {
 
 #faq .accordion-button:focus {
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
-            box-shadow: 0 0 0 0.25rem var(--bs-success) !important; /* Usa tu color primario con opacidad */
+    box-shadow: 0 0 0 0.25rem var(--bs-success) !important;
+    /* Usa tu color primario con opacidad */
 
 }
 
-/* ==== SECCIÓN CONTACTO ==== */
+/* ==== SECCIÓN 7: CONTACTO ==== */
 
 #contacto h4 {
     color: grey;
 }
 
 #contacto a:hover {
-    color:  var(--bs-info);
-        text-decoration: underline;
+    color: var(--bs-info);
+    text-decoration: none;
 }
 
 #contacto iframe {
@@ -273,8 +296,6 @@ main {
 #contacto iframe:hover {
     filter: grayscale(0%) brightness(100%);
 }
-
-
 
 
 /* Footer */
@@ -298,5 +319,5 @@ footer a:hover {
 
 footer .btn-outline-secondary {
     border-color: rgba(0, 0, 0, 0.06);
-     color: #fff;
+    color: #fff;
 }
