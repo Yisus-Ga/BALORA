@@ -79,6 +79,7 @@
     <main class="container">
 
         <!-- SECCIÓN 1: about/SOBRE LA CLÍNICA -->
+
         <section id="about" class="py-5 bg-white">
             <div class="container">
                 <header class="mb-4 text-center">
@@ -125,12 +126,13 @@
             </div>
         </section>
 
-
         <!-- SECCIÓN 2: Servicios -->
+
         <section id="services" class="mb-5 ">
             <header class="mb-5 text-center">
                 <h2 class="h3 fw-bold">Nuestros Tratamientos</h2>
             </header>
+
 
             <!-- Sub-Sección 1: Dermatología Clínica -->
             <div class="service-group mb-5">
@@ -140,7 +142,8 @@
                         necesidad.</p>
                 </div>
 
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- CONTENEDOR: CARDS -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 services-responsive">
                     <article class="col">
                         <div class="card treatment-card h-100">
                             <img src="./imagenes/servicio2.png" class="card-img-top" alt="Consulta dermatológica"
@@ -163,8 +166,7 @@
                                 loading="lazy">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="h6 card-title">Tratamiento de acné</h4>
-                                <p class="card-text text-muted mb-3">Protocolos personalizados para mejorar textura y
-                                    uniformidad.</p>
+                                <p class="card-text text-muted mb-3">Protocolos personalizados.</p>
                                 <div class="mt-auto">
                                     <button class="btn btn-outline-primary" data-bs-toggle="modal"
                                         data-bs-target="#modalDerm2">Ver detalles</button>
@@ -179,8 +181,7 @@
                                 loading="lazy">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="h6 card-title">Rosácea y manchas</h4>
-                                <p class="card-text text-muted mb-3">Tratamientos dermatológicos avanzados para piel
-                                    sensible.</p>
+                                <p class="card-text text-muted mb-3">Tratamientos dermatológicos avanzados.</p>
                                 <div class="mt-auto">
                                     <button class="btn btn-outline-primary" data-bs-toggle="modal"
                                         data-bs-target="#modalDerm3">Ver detalles</button>
@@ -188,141 +189,173 @@
                             </div>
                         </div>
                     </article>
-                </div>
-            </div>
-
-            <!-- Sub-Sección 2: Medicina Estética -->
-            <div class="service-group mb-5">
-                <div class="text-center mb-4">
-                    <h3 class="fw-semibold">Medicina Estética</h3>
-                    <p class="text-muted">Tratamientos no invasivos que realzan la belleza natural sin necesidad de
-                        cirugía.</p>
+                    <!-- article.col para agregar mas cards -->
                 </div>
 
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <article class="col">
-                        <div class="card treatment-card h-100">
-                            <img src="./imagenes/servicio2.png" class="card-img-top"
-                                alt="Aplicación de toxina botulínica" loading="lazy">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="h6 card-title">Toxina Botulínica</h4>
-                                <p class="card-text text-muted mb-3">Reducción de líneas de expresión y arrugas
-                                    dinámicas.</p>
-                                <div class="mt-auto">
-                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalEstet1">Ver detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="col">
-                        <div class="card treatment-card h-100">
-                            <img src="./imagenes/servicio2.png" class="card-img-top" alt="Rellenos faciales"
-                                loading="lazy">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="h6 card-title">Rellenos Faciales</h4>
-                                <p class="card-text text-muted mb-3">Armonización facial con ácido hialurónico y
-                                    técnicas de volumen.</p>
-                                <div class="mt-auto">
-                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalEstet2">Ver detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="col">
-                        <div class="card treatment-card h-100">
-                            <img src="./imagenes/servicio2.png" class="card-img-top" alt="Peeling químico"
-                                loading="lazy">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="h6 card-title">Peeling Químico</h4>
-                                <p class="card-text text-muted mb-3">Estimulación de la regeneración celular para una
-                                    piel más uniforme.</p>
-                                <div class="mt-auto">
-                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalEstet3">Ver detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- Sub-Sección 3: Cirugía Plástica -->
-            <div class="service-group mb-5">
-                <div class="text-center mb-4">
-                    <h3 class="fw-semibold">Cirugía Plástica</h3>
-                    <p class="text-muted">Procedimientos quirúrgicos seguros, personalizados y realizados por
-                        profesionales certificados.</p>
+                <!-- UI móvil (decorativa) -->
+                <div class="services-mobile-ui" aria-hidden="true">
+                    <div class="carousel-dots">
+                        <!-- bolita por cada card  -->
+                        <span></span><span></span><span></span>
+                    </div>
                 </div>
 
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <article class="col">
-                        <div class="card treatment-card h-100">
-                            <img src="./imagenes/servicio2.png" class="card-img-top" alt="Rinoplastia" loading="lazy">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="h6 card-title">Rinoplastia</h4>
-                                <p class="card-text text-muted mb-3">Corrección estética y funcional de la nariz con
-                                    resultados naturales.</p>
-                                <div class="mt-auto">
-                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalCir1">Ver detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                <!-- Sub-Sección 2: Medicina Estética -->
+                <div class="service-group mb-5">
+                    <div class="text-center mb-4 mt-4">
+                        <h3 class="fw-semibold">Medicina Estética</h3>
+                        <p class="text-muted">Tratamientos no invasivos que realzan la belleza natural sin necesidad de
+                            cirugía.</p>
+                    </div>
 
-                    <article class="col">
-                        <div class="card treatment-card h-100">
-                            <img src="./imagenes/servicio2.png" class="card-img-top" alt="Blefaroplastia"
-                                loading="lazy">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="h6 card-title">Blefaroplastia</h4>
-                                <p class="card-text text-muted mb-3">Rejuvenecimiento de la mirada mediante cirugía de
-                                    párpados.</p>
-                                <div class="mt-auto">
-                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalCir2">Ver detalles</button>
+                    <!-- CONTENEDOR: CARDS -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 services-responsive">
+                        <article class="col">
+                            <div class="card treatment-card h-100">
+                                <img src="./imagenes/servicio2.png" class="card-img-top"
+                                    alt="Aplicación de toxina botulínica" loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h6 card-title">Toxina Botulínica</h4>
+                                    <p class="card-text text-muted mb-3">Reducción de líneas de expresión y arrugas
+                                        dinámicas.</p>
+                                    <div class="mt-auto">
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalEstet1">Ver detalles</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
 
-                    <article class="col">
-                        <div class="card treatment-card h-100">
-                            <img src="./imagenes/servicio2.png" class="card-img-top" alt="Liposucción" loading="lazy">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="h6 card-title">Liposucción</h4>
-                                <p class="card-text text-muted mb-3">Redefinición corporal mediante extracción de grasa
-                                    localizada.</p>
-                                <div class="mt-auto">
-                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalCir3">Ver detalles</button>
+                        <article class="col">
+                            <div class="card treatment-card h-100">
+                                <img src="./imagenes/servicio2.png" class="card-img-top" alt="Rellenos faciales"
+                                    loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h6 card-title">Rellenos Faciales</h4>
+                                    <p class="card-text text-muted mb-3">Armonización facial con ácido hialurónico y
+                                        técnicas de volumen.</p>
+                                    <div class="mt-auto">
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalEstet2">Ver detalles</button>
+                                    </div>
                                 </div>
                             </div>
+                        </article>
+
+                        <article class="col">
+                            <div class="card treatment-card h-100">
+                                <img src="./imagenes/servicio2.png" class="card-img-top" alt="Peeling químico"
+                                    loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h6 card-title">Peeling Químico</h4>
+                                    <p class="card-text text-muted mb-3">Estimulación de la regeneración celular para
+                                        una
+                                        piel más uniforme.</p>
+                                    <div class="mt-auto">
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalEstet3">Ver detalles</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- article.col para agregar mas cards -->
+                    </div>
+
+                    <!-- UI móvil (decorativa) -->
+                    <div class="services-mobile-ui" aria-hidden="true">
+                        <div class="carousel-dots">
+                            <!--una bolita por cada card-->
+                            <span></span><span></span><span></span>
                         </div>
-                    </article>
-                </div>
-            </div>
+                    </div>
+
+                    <!-- Sub-Sección 3: Cirugía Plástica -->
+                    <div class="service-group mb-5">
+                        <div class="text-center mb-2 mt-4">
+                            <h3 class="fw-semibold">Cirugía Plástica</h3>
+                            <p class="text-muted">Procedimientos quirúrgicos seguros, personalizados y realizados por
+                                profesionales certificados.</p>
+                        </div>
+
+                        <!-- CONTENEDOR: CARDS -->
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 services-responsive">
+                            <article class="col">
+                                <div class="card treatment-card h-100">
+                                    <img src="./imagenes/servicio2.png" class="card-img-top" alt="Rinoplastia"
+                                        loading="lazy">
+                                    <div class="card-body d-flex flex-column">
+                                        <h4 class="h6 card-title">Rinoplastia</h4>
+                                        <p class="card-text text-muted mb-3">Corrección estética y funcional de la nariz
+                                            con
+                                            resultados naturales.</p>
+                                        <div class="mt-auto">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                                data-bs-target="#modalCir1">Ver detalles</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card treatment-card h-100">
+                                    <img src="./imagenes/servicio2.png" class="card-img-top" alt="Blefaroplastia"
+                                        loading="lazy">
+                                    <div class="card-body d-flex flex-column">
+                                        <h4 class="h6 card-title">Blefaroplastia</h4>
+                                        <p class="card-text text-muted mb-3">Rejuvenecimiento de la mirada mediante
+                                            cirugía
+                                            de
+                                            párpados.</p>
+                                        <div class="mt-auto">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                                data-bs-target="#modalCir2">Ver detalles</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card treatment-card h-100">
+                                    <img src="./imagenes/servicio2.png" class="card-img-top" alt="Liposucción"
+                                        loading="lazy">
+                                    <div class="card-body d-flex flex-column">
+                                        <h4 class="h6 card-title">Liposucción</h4>
+                                        <p class="card-text text-muted mb-3">Redefinición corporal mediante extracción
+                                            de
+                                            grasa
+                                            localizada.</p>
+                                        <div class="mt-auto">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                                data-bs-target="#modalCir3">Ver detalles</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- article.col para agregar mas cards -->
+                        </div>
+
+                        <!-- UI móvil (decorativa) -->
+                        <div class="services-mobile-ui" aria-hidden="true">
+                            <div class="carousel-dots">
+                                <!--una bolita por cada card-->
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
         </section>
-
-
 
         <!-- SECCIÓN 3: EXILIS -->
 
         <section id="exilis" class="py-5 bg-light">
             <div class="container">
                 <div class="row align-items-center">
-                    <!-- Imagen equipo -->
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="./imagenes/exilis1.jpg" class="img-fluid rounded shadow" alt="Equipo Exilis">
-                    </div>
+                    <h2 class="fw-bold text-uppercase mb-3 text-center">Exilis</h2>
 
                     <!-- Contenido -->
                     <div class="col-md-6">
-                        <h2 class="fw-bold text-uppercase mb-3 text-center">Exilis</h2>
+
                         <h5 class="text-muted mb-3">Rejuvenecimiento y remodelación sin cirugía</h5>
                         <p>
                             <strong>EXILIS</strong> es un tratamiento estético no invasivo que combina
@@ -356,15 +389,20 @@
                             </div>
                         </div>
 
-
                         <a href="https://wa.me/5491158416049" target="_blank"
                             class="btn btn-outline-primary btn-lg d-block mx-4 mt-5">Viví la experiencia EXILIS </a>
                     </div>
+                    <!-- Imagen equipo -->
+                    <div class="col-md-6 mb-4 mb-md-0 mt-4">
+                        <img src="./imagenes/exilis1.jpg" class="img-fluid rounded shadow" alt="Equipo Exilis">
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <!-- SECCIÓN 3: team/EQUIPO -->
+
         <section id="team" class="py-5">
             <div class="container">
                 <header class="text-center mb-5">
@@ -429,21 +467,24 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 5: galeria/GALERÍA -->
+        <!-- SECCIÓN 5: Galería Antes/Después (HTML) -->
+
         <section id="galeria" class="py-5 bg-light">
             <div class="container">
                 <header class="text-center mb-5">
-                    <h2 class="h3 fw-bold">Resultados Antes & Después</h2>
+                    <h2 class="h3 fw-bold">Resultados Antes &amp; Después</h2>
                     <p class="text-muted mb-0">Transformaciones reales logradas por nuestro equipo</p>
                 </header>
 
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- CONTENEDOR: mantiene grilla en desktop; en mobile/tablet se transforma en carousel -->
+                <div class="row row-cols-1 row-cols-md-3 g-4 gallery-carousel">
                     <!-- Imagen 1 -->
                     <div class="col">
                         <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
-                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 1">
-                            <div class="overlay">
-                                <span>Antes / Después</span>
+                            <img src="./imagenes/antes_despues.webp" loading="lazy" class="img-fluid gallery-img"
+                                alt="Antes y después 1">
+                            <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                <span class="overlay-text">Antes / Después</span>
                             </div>
                         </div>
                     </div>
@@ -451,9 +492,10 @@
                     <!-- Imagen 2 -->
                     <div class="col">
                         <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
-                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 2">
-                            <div class="overlay">
-                                <span>Antes / Después</span>
+                            <img src="./imagenes/antes_despues.webp" loading="lazy" class="img-fluid gallery-img"
+                                alt="Antes y después 2">
+                            <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                <span class="overlay-text">Antes / Después</span>
                             </div>
                         </div>
                     </div>
@@ -461,9 +503,10 @@
                     <!-- Imagen 3 -->
                     <div class="col">
                         <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
-                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 3">
-                            <div class="overlay">
-                                <span>Antes / Después</span>
+                            <img src="./imagenes/antes_despues.webp" loading="lazy" class="img-fluid gallery-img"
+                                alt="Antes y después 3">
+                            <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                <span class="overlay-text">Antes / Después</span>
                             </div>
                         </div>
                     </div>
@@ -471,9 +514,10 @@
                     <!-- Imagen 4 -->
                     <div class="col">
                         <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
-                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 1">
-                            <div class="overlay">
-                                <span>Antes / Después</span>
+                            <img src="./imagenes/antes_despues.webp" loading="lazy" class="img-fluid gallery-img"
+                                alt="Antes y después 4">
+                            <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                <span class="overlay-text">Antes / Después</span>
                             </div>
                         </div>
                     </div>
@@ -481,9 +525,10 @@
                     <!-- Imagen 5 -->
                     <div class="col">
                         <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
-                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 1">
-                            <div class="overlay">
-                                <span>Antes / Después</span>
+                            <img src="./imagenes/antes_despues.webp" loading="lazy" class="img-fluid gallery-img"
+                                alt="Antes y después 5">
+                            <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                <span class="overlay-text">Antes / Después</span>
                             </div>
                         </div>
                     </div>
@@ -491,18 +536,27 @@
                     <!-- Imagen 6 -->
                     <div class="col">
                         <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
-                            <img src="./imagenes/antes_despues.webp" class="img-fluid" alt="Antes y después 1">
-                            <div class="overlay">
-                                <span>Antes / Después</span>
+                            <img src="./imagenes/antes_despues.webp" loading="lazy" class="img-fluid gallery-img"
+                                alt="Antes y después 6">
+                            <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                <span class="overlay-text">Antes / Después</span>
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <!-- UI móvil (decorativa, sin JS) -->
+                <div class="gallery-mobile-ui" aria-hidden="true">
+
+                    <div class="gallery-dots" role="presentation">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- SECCIÓN 6: faq/PREGUNTAS FRECUENTES -->
+
         <section id="faq" class="py-5 bg-light">
             <div class="container">
                 <header class="text-center mb-5">
@@ -597,6 +651,7 @@
         </section>
 
         <!-- SECCIÓN 7: contacto/CONTACTO -->
+
         <section id="contacto" class="py-5 bg-white">
             <div class="container">
                 <header class="text-center mb-5">
@@ -641,11 +696,11 @@
                             <div class="d-flex gap-3 mt-3">
                                 <a href="https://wa.me/5491158416049" target="_blank"
                                     class="btn btn-success rounded-pill px-4">
-                                    <i class="bi bi-whatsapp me-2"></i>Chatear por WhatsApp
+                                    <i class="bi bi-whatsapp me-2"></i>WhatsApp
                                 </a>
                                 <a href="mailto:baloramed@gmail.com" target="_blank"
                                     class="btn btn-outline-primary rounded-pill px-4">
-                                    <i class="bi bi-envelope me-2"></i>Enviar Email
+                                    <i class="bi bi-envelope me-2"></i>Email
                                 </a>
                             </div>
                         </div>
@@ -787,7 +842,7 @@
     </div>
 
 
-      <!-- Modal 7 -->
+    <!-- Modal 7 -->
     <div class="modal fade" id="modalCir1" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -807,7 +862,7 @@
         </div>
     </div>
 
-      <!-- Modal 8 -->
+    <!-- Modal 8 -->
     <div class="modal fade" id="modalCir2" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -827,7 +882,7 @@
         </div>
     </div>
 
-      <!-- Modal 9 -->
+    <!-- Modal 9 -->
     <div class="modal fade" id="modalCir3" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">

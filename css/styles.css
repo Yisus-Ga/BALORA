@@ -147,7 +147,9 @@ main {
 
 /*    <!-- SECCIÓN 2: TRATAMIENTOS -->*/
 
-#services {margin-top: 5rem;}
+#services {
+    margin-top: 5rem;
+}
 
 
 .treatment-card {
@@ -169,22 +171,136 @@ main {
 }
 
 
+/* ===========================
+   Services - Scroll Snap Carousel (mobile/tablet)
+   =========================== */
+
+/* ---------------------------
+   Desktop/default: no tocar la grilla Bootstrap
+   --------------------------- */
+
+/* ---------------------------
+   Mobile / Tablet (hasta 991px) : activar carousel
+   --------------------------- */
+@media (max-width: 991px) {
+
+    /* Neutralizar gutters negativos del .row para evitar overflow */
+    .services-responsive {
+        margin-left: 0;
+        /* anula el -15px default de .row en bootstrap */
+        margin-right: 0;
+        padding-left: 0.75rem;
+        /* padding para dar espacio lateral */
+        padding-right: 0.75rem;
+    }
+
+    /* Convertir la fila en track horizontal */
+    .services-responsive {
+        display: flex !important;
+        /* transformar en flex sólo en este breakpoint */
+        flex-wrap: nowrap;
+        /* items en una sola fila */
+        gap: 1rem;
+        /* separación entre items */
+        overflow-x: auto;
+        /* scroll horizontal */
+        scroll-snap-type: x mandatory;
+        /* habilita scroll-snap */
+        -webkit-overflow-scrolling: touch;
+        /* momentum scroll iOS */
+        padding-top: 0.5rem;
+        padding-bottom: 0.75rem;
+        scrollbar-width: none;
+        /* Firefox: ocultar scrollbar */
+    }
+
+    /* ocultar scrollbar Webkit */
+    .services-responsive::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Cada item (col) funciona como slide */
+    .services-responsive>.col {
+        flex: 0 0 70%;
+        /* ancho del slide: 70% (peek lateral) */
+        max-width: 70%;
+        scroll-snap-align: start;
+        /* snap al inicio del slide */
+        box-sizing: border-box;
+        padding-left: 0.5rem;
+        /* compensar gutter */
+        padding-right: 0.5rem;
+    }
+
+    /* Asegurarnos que la card ocupe 100% del slide */
+    .services-responsive>.col .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Opcional: un poco de padding inferior para no pisar el footer en móviles */
+    .services-responsive+.services-mobile-ui {
+        margin-top: 0.25rem;
+    }
+
+    /* ---------------------------
+     Mobile UI: flechas y dots (visuales)
+     --------------------------- */
+    .services-mobile-ui {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 0.5rem;
+        gap: 1rem;
+    }
+
+    /* Dots */
+    .carousel-dots {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+
+    .carousel-dots span {
+        width: 10px;
+        height: 10px;
+        background: #d0d0d0;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    /* Pequeña mejora visual: sombra al hacer scroll (opcional) */
+    .services-responsive:active .card,
+    .services-responsive:focus-within .card {
+        transition: box-shadow .18s ease;
+    }
+}
+
+
 /* ==== SECCIÓN 3: EXILIS ==== */
+
+#exilis {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
 .before-after {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* cuadrado perfecto, se ajusta bien en grillas */
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* cuadrado perfecto, se ajusta bien en grillas */
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .before-after:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 /* Espaciado general de la grilla */
 .before-after-grid {
-  justify-content: center;
+    justify-content: center;
 }
 
 
@@ -218,36 +334,162 @@ main {
 }
 
 
-
 /* ==== SECCIÓN 5: GALERÍA ==== */
-.gallery-card img {
-    transition: transform 0.4s ease, filter 0.4s ease;
+
+
+/* Contenedor de cada tarjeta de galería */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: transform .28s ease, box-shadow .28s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.gallery-card:hover img {
-    transform: scale(1.05);
-    filter: brightness(0.8);
+
+.gallery-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform .4s ease, filter .35s ease;
+    will-change: transform;
 }
 
-.gallery-card .overlay {
+/* Zoom suave en hover / focus / active (desktop y accesibilidad) */
+.gallery-card:hover .gallery-img,
+.gallery-card:focus-within .gallery-img,
+.gallery-card:active .gallery-img {
+    transform: scale(1.07);
+    filter: brightness(0.92);
+}
+
+/* Overlay (unificado) */
+.gallery-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    opacity: 0;
+    /* top:0; right:0; bottom:0; left:0; */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    transition: opacity 0.3s ease;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    transition: opacity .25s ease, background .25s ease;
+    pointer-events: none;
+    /* evita interceptar clicks cuando está oculto */
 }
 
-.gallery-card:hover .overlay {
+/* Mostrar overlay en hover / focus / active (incluye touch) */
+.gallery-card:hover .gallery-overlay,
+.gallery-card:focus-within .gallery-overlay,
+.gallery-card:active .gallery-overlay {
     opacity: 1;
+    pointer-events: auto;
+    /* cuando visible, permite interacciones si hay botones */
 }
 
+/* Texto dentro del overlay */
+.overlay-text {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-align: center;
+    padding: 0.35rem 0.9rem;
+    line-height: 1.1;
+    text-transform: none;
+    display: inline-block;
+}
+
+/* small screens: touch-friendly - aumentar área táctil del overlay si se necesita */
+@media (max-width: 576px) {
+    .overlay-text {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* ===========================
+   Scroll-snap (mobile/tablet) 
+   =========================== */
+@media (max-width: 992px) {
+
+    .gallery-carousel {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        /* convertir fila en track horizontal */
+        display: flex !important;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 0.5rem;
+        padding-bottom: 0.75rem;
+        scrollbar-width: none;
+    }
+
+    .gallery-carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* cada columna como slide */
+    .gallery-carousel>.col {
+        flex: 0 0 80%;
+        max-width: 80%;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        padding-left: 0.5rem;
+        /* compensar gutters */
+        padding-right: 0.5rem;
+    }
+
+    /* asegurar que la tarjeta ocupe todo el slide */
+    .gallery-carousel>.col .gallery-card {
+        width: 100%;
+    }
+
+    /* UI móvil (flechas/dots) — solo visuales */
+    .gallery-mobile-ui {
+        position: relative;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .gallery-dots {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+
+    .gallery-dots span {
+        width: 10px;
+        height: 10px;
+        background: #d0d0d0;
+        border-radius: 50%;
+        display: inline-block;
+    }
+}
+
+/* ===========================
+   Compatibilidad: si en algún punto anterior tenías .overlay en lugar de .gallery-overlay,
+   esta regla asegura que ambos nombres funcionen (evita romper HTML legacy).
+   =========================== */
+.gallery-card .overlay,
+.gallery-card .gallery-overlay {
+    /* nada adicional: simplemente asegura que overlay esté posicionado correctamente */
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* ==== SECCIÓN 6: FAQ ==== */
@@ -273,18 +515,18 @@ main {
 #faq .accordion-button:focus {
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
     box-shadow: 0 0 0 0.25rem var(--bs-success) !important;
-    /* Usa tu color primario con opacidad */
+   
 
 }
 
 /* ==== SECCIÓN 7: CONTACTO ==== */
 
 #contacto h4 {
-    color: grey;
+    color: black;
 }
 
 #contacto a:hover {
-    color: var(--bs-info);
+    color: white;
     text-decoration: none;
 }
 
@@ -313,11 +555,18 @@ footer a {
 footer a:hover {
 
     color: var(--bs-primary);
-    /* respeta el color primario de Bootstrap o el que hayas personalizado */
-    text-decoration: none;
+      text-decoration: none;
 }
 
 footer .btn-outline-secondary {
     border-color: rgba(0, 0, 0, 0.06);
     color: #fff;
 }
+
+footer .btn-outline-secondary:hover {
+    background-color: var(--bs-link-hover-color)
+}
+
+
+
+
