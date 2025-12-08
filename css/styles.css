@@ -100,8 +100,8 @@ body {
 }
 
 .navbar img  {
-   object-fit: contain;
-   width: 35px;
+   object-fit: contain !important;
+   width: 35px !important;
 }
 
 .navbar a.nav-link,
