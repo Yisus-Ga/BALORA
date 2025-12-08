@@ -99,7 +99,10 @@ body {
     background-color: var(--bs-secondary) !important;
 }
 
-
+.navbar img  {
+   object-fit: contain;
+   width: 35px;
+}
 
 .navbar a.nav-link,
 .navbar-brand {
@@ -131,6 +134,20 @@ body {
 main {
     padding-top: 2rem;
     padding-bottom: 4rem;
+}
+
+#wpp {
+    z-index: 1000;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 40px;
+    right: 5%;
+    transition: .3s ease;
+}
+
+#wpp:hover {
+    transform: translateY(-4px);
 }
 
 
@@ -546,6 +563,12 @@ footer {
     color: #fff;
     font-size: 0.95rem;
 
+}
+
+
+footer img {
+   object-fit: contain;
+    max-width: 180px;
 }
 
 footer a {
