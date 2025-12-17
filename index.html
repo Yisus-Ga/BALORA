@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 
-    <link rel="icon" href="./imagenes/imagenesLogos/ico.ico" type="image/ico">
+    <link rel="icon" href="./imagenes/imagenesLogos/jarronBlanco-Ico.ico" type="image/ico">
 
 </head>
 
@@ -24,7 +24,11 @@
     <header class="Header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">BÄLORA <img src="./imagenes/imagenesLogos/balorasvg1.svg" alt=""></a>
+                <a class="navbar-brand" href="#">
+                    <img id="balora-letras-blanco" src="./imagenes/imagenesLogos/balora-letras-blanco.webp"
+                        alt="BALORA">
+                    <img id="jarronblanco" src="./imagenes/imagenesLogos/jarronblanco.webp" alt="BALORA-LOGO">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +41,7 @@
                             <a class="nav-link" href="#about">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#services">Tratamientos</a>
+                            <a class="nav-link" aria-current="page" href="#services">Especialidades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#exilis">EXILIS</a>
@@ -67,7 +71,7 @@
 
     <aside class="hero-placeholder" role="region" aria-label="Hero">
         <div class="container">
-            <h1 class="display-5 fw-bold">BÄLORA Medicina Estética Integral</h1>
+            <h1 class="display-5 fw-bold"><span id="balfont">BÄLORA</span> Medicina Estética Integral</h1>
             <p class="lead">Tratamientos personalizados con tecnología de vanguardia y un equipo profesional.</p>
             <a href="#services" class="btn btn-lg btn-primary mt-3">Ver tratamientos</a>
         </div>
@@ -84,7 +88,7 @@
         <section id="about" class="py-5 bg-white">
             <div class="container">
                 <header class="mb-4 text-center">
-                    <h2 class="h3 fw-bold">Sobre Nuestra Clínica</h2>
+                    <h2 class="h3 fw-bold">Sobre BÄLORA</h2>
                     <p class="text-muted mb-0">Cuidamos tu belleza y bienestar con ciencia, tecnología y experiencia
                         médica</p>
                 </header>
@@ -92,7 +96,7 @@
                 <div class="row align-items-center g-5">
                     <!-- Columna texto -->
                     <div class="col-md-6">
-                        <h3 class="h5 fw-semibold mb-3">Clínica Estética Integral</h3>
+                        <h3 class="h5 fw-semibold mb-3">Medicina Estética Integral</h3>
                         <p>
                             Somos un centro especializado en tratamientos faciales, corporales y capilares, con un
                             enfoque integral en la salud y estética de cada paciente.
@@ -107,7 +111,7 @@
                         <ul class="list-unstyled text-muted">
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Más de 10 años de trayectoria
                             </li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Equipos aprobados</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Tecnología de vanguardia</li>
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Atención personalizada y
                                 confidencial</li>
                         </ul>
@@ -117,9 +121,10 @@
                     <!-- Columna imagen -->
                     <div class="col-md-6">
                         <figure class="m-0">
-                            <img src="./imagenes/imagen_clinica.jpeg" class="img-fluid rounded-4 shadow-sm"
+                            <img src="./imagenes/hero-nosotros/nosotros.webp" class="img-fluid rounded-4 shadow-sm"
                                 alt="Instalaciones de la clínica" loading="lazy">
-                            <figcaption class="text-muted small mt-2 text-center">Nuestras instalaciones, diseñadas para
+                            <figcaption class="text-muted small mt-2 text-center">Nuestras instalaciones están diseñadas
+                                para
                                 tu confort</figcaption>
                         </figure>
                     </div>
@@ -131,7 +136,7 @@
 
         <section id="services" class="mb-5 ">
             <header class="mb-5 text-center">
-                <h2 class="h3 fw-bold">Nuestros Tratamientos</h2>
+                <h2 class="h3 fw-bold">Nuestras Especialidades</h2>
             </header>
 
 
@@ -150,9 +155,8 @@
                             <img src="./imagenes/servicio2.png" class="card-img-top" alt="Consulta dermatológica"
                                 loading="lazy">
                             <div class="card-body d-flex flex-column">
-                                <h4 class="h6 card-title">Evaluación de la piel</h4>
-                                <p class="card-text text-muted mb-3">Diagnóstico y seguimiento clínico de patologías
-                                    cutáneas.</p>
+                                <h4 class="h6 card-title">Control de lunares</h4>
+                                <p class="card-text text-muted mb-3">Diagnóstico y seguimiento de nevos.</p>
                                 <div class="mt-auto">
                                     <button class="btn btn-outline-primary" data-bs-toggle="modal"
                                         data-bs-target="#modalDerm1">Ver detalles</button>
@@ -166,8 +170,9 @@
                             <img src="./imagenes/servicio2.png" class="card-img-top" alt="Tratamiento de acné"
                                 loading="lazy">
                             <div class="card-body d-flex flex-column">
-                                <h4 class="h6 card-title">Tratamiento de acné</h4>
-                                <p class="card-text text-muted mb-3">Protocolos personalizados.</p>
+                                <h4 class="h6 card-title">Tratamiento de acné, rosacea y melasma</h4>
+                                <p class="card-text text-muted mb-3">Protocolos personalizados para patologías cutáneas
+                                    frecuentes.</p>
                                 <div class="mt-auto">
                                     <button class="btn btn-outline-primary" data-bs-toggle="modal"
                                         data-bs-target="#modalDerm2">Ver detalles</button>
@@ -181,8 +186,9 @@
                             <img src="./imagenes/servicio2.png" class="card-img-top" alt="Rosácea y manchas"
                                 loading="lazy">
                             <div class="card-body d-flex flex-column">
-                                <h4 class="h6 card-title">Rosácea y manchas</h4>
-                                <p class="card-text text-muted mb-3">Tratamientos dermatológicos avanzados.</p>
+                                <h4 class="h6 card-title">Biopsias y criocirugía</h4>
+                                <p class="card-text text-muted mb-3">Diagnóstico y tratamiento de patologías benignas y
+                                    malignas.</p>
                                 <div class="mt-auto">
                                     <button class="btn btn-outline-primary" data-bs-toggle="modal"
                                         data-bs-target="#modalDerm3">Ver detalles</button>
@@ -248,7 +254,7 @@
                                 <img src="./imagenes/servicio2.png" class="card-img-top" alt="Peeling químico"
                                     loading="lazy">
                                 <div class="card-body d-flex flex-column">
-                                    <h4 class="h6 card-title">Peeling Químico</h4>
+                                    <h4 class="h6 card-title">Bioestimuladores</h4>
                                     <p class="card-text text-muted mb-3">Estimulación de la regeneración celular para
                                         una
                                         piel más uniforme.</p>
@@ -260,6 +266,58 @@
                             </div>
                         </article>
 
+
+                        <article class="col">
+                            <div class="card treatment-card h-100">
+                                <img src="./imagenes/servicio2.png" class="card-img-top" alt="Peeling químico"
+                                    loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h6 card-title">PRP</h4>
+                                    <p class="card-text text-muted mb-3">Plasma rico en plaquetas como bioestimulador
+                                        natural.</p>
+                                    <div class="mt-auto">
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalEstet4">Ver detalles</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+
+
+
+                        <article class="col">
+                            <div class="card treatment-card h-100">
+                                <img src="./imagenes/servicio2.png" class="card-img-top" alt="Peeling químico"
+                                    loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h6 card-title">Mesoterapia</h4>
+                                    <p class="card-text text-muted mb-3">Tratamiento facial, corporal y capilar.</p>
+                                    <div class="mt-auto">
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalEstet5">Ver detalles</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col">
+                            <div class="card treatment-card h-100">
+                                <img src="./imagenes/servicio2.png" class="card-img-top" alt="Peeling químico"
+                                    loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h6 card-title">Peeling profundo</h4>
+                                    <p class="card-text text-muted mb-3">Exfoliación química para la mejora en calidad
+                                        de la piel.</p>
+                                    <div class="mt-auto">
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalEstet6">Ver detalles</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+
                         <!-- article.col para agregar mas cards -->
                     </div>
 
@@ -267,7 +325,7 @@
                     <div class="services-mobile-ui" aria-hidden="true">
                         <div class="carousel-dots">
                             <!--una bolita por cada card-->
-                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
                     </div>
 
@@ -286,10 +344,8 @@
                                     <img src="./imagenes/servicio2.png" class="card-img-top" alt="Rinoplastia"
                                         loading="lazy">
                                     <div class="card-body d-flex flex-column">
-                                        <h4 class="h6 card-title">Rinoplastia</h4>
-                                        <p class="card-text text-muted mb-3">Corrección estética y funcional de la nariz
-                                            con
-                                            resultados naturales.</p>
+                                        <h4 class="h6 card-title">Cirugía mamaria</h4>
+                                        <p class="card-text text-muted mb-3">Aumento, reducción y pexia.</p>
                                         <div class="mt-auto">
                                             <button class="btn btn-outline-primary" data-bs-toggle="modal"
                                                 data-bs-target="#modalCir1">Ver detalles</button>
@@ -304,10 +360,8 @@
                                         loading="lazy">
                                     <div class="card-body d-flex flex-column">
                                         <h4 class="h6 card-title">Blefaroplastia</h4>
-                                        <p class="card-text text-muted mb-3">Rejuvenecimiento de la mirada mediante
-                                            cirugía
-                                            de
-                                            párpados.</p>
+                                        <p class="card-text text-muted mb-3">Rejuvenecimiento quirurgico de la mirada
+                                        </p>
                                         <div class="mt-auto">
                                             <button class="btn btn-outline-primary" data-bs-toggle="modal"
                                                 data-bs-target="#modalCir2">Ver detalles</button>
@@ -318,14 +372,11 @@
 
                             <article class="col">
                                 <div class="card treatment-card h-100">
-                                    <img src="./imagenes/servicio2.png" class="card-img-top" alt="Liposucción"
-                                        loading="lazy">
+                                    <img src="./imagenes/servicio2.png" class="card-img-top"
+                                        alt="Cirugía de contorno corporal" loading="lazy">
                                     <div class="card-body d-flex flex-column">
-                                        <h4 class="h6 card-title">Liposucción</h4>
-                                        <p class="card-text text-muted mb-3">Redefinición corporal mediante extracción
-                                            de
-                                            grasa
-                                            localizada.</p>
+                                        <h4 class="h6 card-title">Cirugía de contorno corporal</h4>
+                                        <p class="card-text text-muted mb-3">Remodelación corporal quirurgica.</p>
                                         <div class="mt-auto">
                                             <button class="btn btn-outline-primary" data-bs-toggle="modal"
                                                 data-bs-target="#modalCir3">Ver detalles</button>
@@ -345,6 +396,94 @@
                             </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+
+                    <!-- Sub-Sección 4: Cosmiatría -->
+                    <div class="service-group mb-5">
+                        <div class="text-center mb-2 mt-4">
+                            <h3 class="fw-semibold">Cosmiatría & Relax</h3>
+                            <p class="text-muted">Armonía entre tu piel y tu cuerpo.</p>
+                        </div>
+
+                        <!-- CONTENEDOR: CARDS -->
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 services-responsive">
+                            <article class="col">
+                                <div class="card treatment-card h-100">
+                                    <img src="./imagenes/servicio2.png" class="card-img-top" alt="Rinoplastia"
+                                        loading="lazy">
+                                    <div class="card-body d-flex flex-column">
+                                        <h4 class="h6 card-title">Limpieza facial</h4>
+                                        <p class="card-text text-muted mb-3">Purificación de la piel.</p>
+                                        <div class="mt-auto">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                                data-bs-target="#modalcosmi1">Ver detalles</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card treatment-card h-100">
+                                    <img src="./imagenes/servicio2.png" class="card-img-top" alt="Blefaroplastia"
+                                        loading="lazy">
+                                    <div class="card-body d-flex flex-column">
+                                        <h4 class="h6 card-title">Drenaje linfático</h4>
+                                        <p class="card-text text-muted mb-3">Drenaje manual para disminuir retención.
+                                        </p>
+                                        <div class="mt-auto">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                                data-bs-target="#modalcosmi2">Ver detalles</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card treatment-card h-100">
+                                    <img src="./imagenes/servicio2.png" class="card-img-top" alt="Liposucción"
+                                        loading="lazy">
+                                    <div class="card-body d-flex flex-column">
+                                        <h4 class="h6 card-title">Masaje corporal y facial</h4>
+                                        <p class="card-text text-muted mb-3">Relajación consciente y cuidado profundo.
+                                        </p>
+                                        <div class="mt-auto">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                                data-bs-target="#modalcosmi3">Ver detalles</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- article.col para agregar mas cards -->
+                        </div>
+
+                        <!-- UI móvil (decorativa) -->
+                        <div class="services-mobile-ui" aria-hidden="true">
+                            <div class="carousel-dots">
+                                <!--una bolita por cada card-->
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
 
         <!-- SECCIÓN 3: EXILIS -->
@@ -352,7 +491,7 @@
         <section id="exilis" class="py-5 bg-light">
             <div class="container">
                 <div class="row align-items-center">
-                    <h2 class="fw-bold text-uppercase mb-3 text-center">Exilis</h2>
+                    <h2 class="fw-bold text-uppercase mb-3 text-center">Exilis ultra 360 - btl</h2>
 
                     <!-- Contenido -->
                     <div class="col-md-6">
@@ -373,19 +512,19 @@
                         <!-- Imágenes antes y después -->
                         <div class="row g-3 my-4 before-after-grid">
                             <div class="col-6 col-md-4 col-lg-3">
-                                <img src="./imagenes/antes_despues.webp"
+                                <img src="./imagenes/exilisImgage/exilisantsdespues1.jpeg"
                                     class="before-after img-fluid rounded shadow-sm" alt="Antes 1">
                             </div>
                             <div class="col-6 col-md-4 col-lg-3">
-                                <img src="./imagenes/antes_despues.webp"
+                                <img src="./imagenes/exilisImgage/exilisantsdespues2.jpeg"
                                     class="before-after img-fluid rounded shadow-sm" alt="Después 1">
                             </div>
                             <div class="col-6 col-md-4 col-lg-3">
-                                <img src="./imagenes/antes_despues.webp"
+                                <img src="./imagenes/exilisImgage/exilisantsdespues3.jpeg"
                                     class="before-after img-fluid rounded shadow-sm" alt="Antes 2">
                             </div>
                             <div class="col-6 col-md-4 col-lg-3">
-                                <img src="./imagenes/antes_despues.webp"
+                                <img src="./imagenes/exilisImgage/exilisantsdespues4.jpeg"
                                     class="before-after img-fluid rounded shadow-sm" alt="Después 2">
                             </div>
                         </div>
@@ -411,7 +550,7 @@
                     <p class="text-muted mb-0">Especialistas comprometidos con tu bienestar y belleza</p>
                 </header>
 
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
                     <!-- Miembro 1 -->
                     <div class="col">
@@ -438,8 +577,7 @@
                                 <h5 class="card-title mb-1 fw-semibold">Dr. Juan Pablo Pratesi</h5>
                                 <p class="text-primary mb-1 small">Cirujano Plástico</p>
                                 <p class="card-text text-muted small">
-                                    Experto en tratamientos dermatológicos y control de envejecimiento cutáneo.
-                                    Expositor internacional.
+                                    Médico cirujano especializado en procedimientos estéticos y reconstructivos.
                                 </p>
                             </div>
                             <div class="card-footer bg-transparent border-0 text-center pb-3"> </div>
@@ -453,16 +591,32 @@
                             <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="Lic. Sofía Rivas"
                                 class="team-photo mt-4">
                             <div class="card-body">
-                                <h5 class="card-title mb-1 fw-semibold">Lic. Sofía Rivas</h5>
-                                <p class="text-primary mb-1 small">Cosmetóloga y Nutricionista</p>
+                                <h5 class="card-title mb-1 fw-semibold">Silvia Brito</h5>
+                                <p class="text-primary mb-1 small">Cosmeatra y masajista</p>
                                 <p class="card-text text-muted small">
-                                    Combina salud nutricional con tratamientos estéticos para lograr resultados
-                                    integrales.
+                                    Experta en tratamientos de relajación y cuidado facial y corporal.
                                 </p>
                             </div>
                             <div class="card-footer bg-transparent border-0 text-center pb-3"> </div>
                         </div>
                     </div>
+
+                    <!-- Miembro 4 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm team-card text-center">
+                            <img src="./imagenes/AGOS.jpg" alt="Dra. Laura Martínez" class="team-photo mt-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1 fw-semibold">Cecilia Gavilán</h5>
+                                <p class="text-primary mb-1 small">Coordinadora administrativa y secretaria</p>
+                                <p class="card-text text-muted small">
+                                    Encargada de la atención al cliente y gestión administrativa de la clínica.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-3"> </div>
+
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
@@ -485,7 +639,8 @@
                             <img src="./imagenes/antes_despues.webp" loading="lazy" class="img-fluid gallery-img"
                                 alt="Antes y después 1">
                             <div class="gallery-overlay d-flex justify-content-center align-items-center">
-                                <span class="overlay-text">Antes / Después</span>
+                                <span class="overlay-text">Antes / Después - Botox</span>
+
                             </div>
                         </div>
                     </div>
@@ -719,18 +874,15 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTrat1Label">Rejuvenecimiento Facial — Detalles</h5>
+                    <h5 class="modal-title" id="modalTrat1Label">Control de lunares — Detalles</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <img src="./imagenes/subservicio1.png" alt="" class="modal-img mb-3" loading="lazy">
-                    <p>Descripción amplia del tratamiento, beneficios, duración, número de sesiones recomendadas y
-                        contraindicaciones.</p>
-                    <ul>
-                        <li>Duración: 45-60 minutos</li>
-                        <li>Recuperación mínima</li>
-                        <li>Resultados: progresivos</li>
-                    </ul>
+                    <p>Evaluación dermatológica integral de lunares mediante examen clínico y dermatoscopia, para
+                        detectar lesiones sospechosas de forma temprana y realizar seguimiento seguro y personalizado.
+                    </p>
+
                 </div>
                 <div class="modal-footer">
                     <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
@@ -745,12 +897,14 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTrat2Label">Contorno Corporal — Detalles</h5>
+                    <h5 class="modal-title" id="modalTrat2Label">Tratamiento de acné, rocacea y melasma — Detalles</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
-                    <p>Descripción general del tratamiento </p>
+                    <p>Abordaje dermatológico integral y personalizado para acné, rosácea y melasma, combinando
+                        evaluación clínica, tratamientos médicos, tecnología y cuidado de la piel , el objetivo es
+                        mejorar lesiones, controlar brotes y unificar el tono cutáneo de forma segura.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
@@ -765,12 +919,14 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <h5 class="modal-title" id="modalTrat3Label">Biopsias y criocirugía — Detalles</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <img src="./imagenes/subservicio1.png" alt="" class="modal-img mb-3" loading="lazy">
-                    <p>Descripción general del tratamiento.</p>
+                    <p>Biopsias cutáneas y criocirugía para diagnóstico y tratamiento de lesiones de la piel. Son
+                        procedimientos ambulatorios, seguros y precisos, orientados a detectar patologías en forma
+                        temprana y tratar lesiones benignas y malignas.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
@@ -786,12 +942,15 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <h5 class="modal-title" id="modalTrat3Label">Toxina Botulínica — Detalles</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
-                    <p>Descripción general del tratamiento.</p>
+                    <p>Permite suavizar arrugas de expresión y prevenir su profundización. El tratamiento relaja
+                        selectivamente los músculos faciales, logrando un resultado natural, armónico y personalizado,
+                        sin alterar la expresión. También utilizada en tratamiento de bruxismo, hiperhidrosis, sonrisa
+                        gingival.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
@@ -807,12 +966,14 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <h5 class="modal-title" id="modalTrat3Label">Rellenos Faciales — Detalles</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <img src="./imagenes/subservicio1.png" alt="" class="modal-img mb-3" loading="lazy">
-                    <p>Descripción general del tratamiento.</p>
+                    <p>Tratamiento inyectable que restaura volúmenes, define contornos y suaviza surcos faciales. El
+                        ácido hialurónico es biocompatible y reabsorbible, permitiendo resultados naturales,
+                        personalizados y seguros, con mejora inmediata y progresiva de la armonía facial.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
@@ -827,12 +988,98 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <h5 class="modal-title" id="modalTrat3Label">Bioestimuladores — Detalles</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
-                    <p>Descripción general del tratamiento.</p>
+                    <p>Tratamientos inyectables que estimulan la producción natural de colágeno, mejoran la firmeza,
+                        elasticidad y calidad de la piel de forma progresiva. Ideales para rejuvenecer y redefinir
+                        contornos con resultados duraderos y naturales.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="modalEstet4" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">PRP — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Tratamiento biológico que utiliza factores de crecimiento obtenidos de la propia sangre del
+                        paciente para estimular la regeneración celular, mejorar la calidad de la piel, la luminosidad y
+                        la firmeza, favoreciendo un rejuvenecimiento natural y progresivo, su aplicación puede ser tanto
+                        profunda para dar firmeza, o, superficial con dermopen para mejorar calidad de piel.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="modalEstet5" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">Mesoterapia — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Tratamiento mínimamente invasivo que consiste en microinyecciones de activos específicos en la
+                        piel para mejorar hidratación, luminosidad, firmeza y calidad cutánea. A nivel corporal, ayuda a
+                        mejorar la textura de la piel y tratar grasa localizada y celulitis. Se personaliza según cada
+                        paciente y objetivo.</p>
+                    <ul>
+                        <li>Mesoterapia facial</li>
+                        <li>Mesoterapia corporal</li>
+                        <li>Mesoterapia capilar</li>
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="modalEstet6" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">Peeling profundo — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Exfoliación química que renueva las capas profundas de la piel, indicado para manchas, arrugas
+                        marcadas y daño solar. Estimula la regeneración cutánea, mejora la textura y unifica el tono,
+                        logrando una piel visiblemente más firme y luminosa.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
@@ -848,12 +1095,16 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <h5 class="modal-title" id="modalTrat3Label">Cirugía mamaria — Detalles</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
-                    <p>Descripción general del tratamiento.</p>
+                    <p>En Bälora realizamos cirugía mamaria con un enfoque integral, priorizando la armonía corporal, la
+                        seguridad y resultados naturales. Ofrecemos aumento mamario, reducción mamaria y mastopexia,
+                        adaptando cada técnica a la anatomía, necesidades funcionales y expectativas de cada paciente,
+                        con planificación personalizada y seguimiento especializado.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
@@ -868,12 +1119,15 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <h5 class="modal-title" id="modalTrat3Label">Blefaroplastia — Detalles</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
-                    <p>Descripción general del tratamiento </p>
+                    <p>Cirugía destinada a rejuvenecer la mirada mediante la corrección del exceso de piel, grasa y
+                        flacidez en párpados superiores e inferiores. Mejora el aspecto cansado, aporta frescura al
+                        rostro y, en algunos casos, optimiza el campo visual, manteniendo resultados naturales y
+                        armónicos.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
@@ -888,12 +1142,14 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTrat3Label">Terapias Capilares — Detalles</h5>
+                    <h5 class="modal-title" id="modalTrat3Label">Cirugía de contorno corporal — Detalles</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
-                    <p>Descripción general del tratamiento</p>
+                    <p>Procedimientos destinados a remodelar y armonizar la silueta, eliminando exceso de piel y grasa
+                        tras cambios de peso o embarazo. Incluye abdominoplastía, lipoaspiración y cirugías combinadas,
+                        con un enfoque seguro y personalizado.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
@@ -903,35 +1159,122 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+    <div class="modal fade" id="modalcosmi1" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">Limpieza facial — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Tratamiento integral que elimina impurezas, células muertas y exceso de sebo, oxigena la piel y
+                        restaura su equilibrio natural. Mejora la textura, luminosidad y preparación de la piel para
+                        otros procedimientos, combinando salud, bienestar y relax.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="modalcosmi2" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">Drenaje Linfático — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Tratamiento manual terapéutico que estimula el sistema linfático, reduce edemas y mejora la
+                        circulación. Ideal para bienestar general y como complemento fundamental en la recuperación
+                        postquirúrgica, favoreciendo una evolución más rápida y confortable.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="modalcosmi3" tabindex="-1" aria-labelledby="modalTrat3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrat3Label">Masaje corporal y facial — Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imagenes/subservicio2.png" alt="" class="modal-img mb-3" loading="lazy">
+                    <p>Masajes terapéuticos orientados al bienestar integral. El masaje relajante reduce el estrés y
+                        mejora la circulación; el descontracturante actúa sobre tensiones musculares, aliviando dolores
+                        y recuperando movilidad, en un entorno de calma y cuidado.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5491158416049" class="btn btn-primary" target="_blank">Agendar Turno</a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- FOOTER -->
 
     <footer class="border-top mt-5">
         <div class="container py-5">
-            <div class="row gy-4">
-                <div class="col-md-4 text-center text-md-start">
+            <div class="row gy-4 ">
+                <div class="col-md-4 text-center">
                     <a class="d-inline-block mb-3 fw-bold text-decoration-none" href="#">
-                        <span class="ms-0">BÄLORA | Medicina estética integral</span>
+                        <span class="ms-0 fs-5">BÄLORA - Medicina Estética Integral</span>
                     </a>
                     <p class=" small mb-0">Equipo médico especializado</p>
 
-                    <img src="./imagenes/imagenesLogos/balorasvg2.svg" alt="svg logo">
+                    <img id="logoCompleto" src="./imagenes/imagenesLogos/balora-logo-completo.webp" alt="svg logo">
                 </div>
 
-                <div class="col-md-3 text-center text-md-start">
+                <div class="col-md-3 text-center">
                     <h6 class="fw-semibold">Enlaces</h6>
                     <ul class="list-unstyled small">
-                        <li><a class="text-decoration-none" href="#services">Servicios</a></li>
                         <li><a class="text-decoration-none" href="#about">Nosotros</a></li>
+                        <li><a class="text-decoration-none" href="#services">Especialidades</a></li>
+                        <li><a class="text-decoration-none" href="#exilis">EXILIS</a></li>
                         <li><a class="text-decoration-none" href="#team">Equipo</a></li>
                         <li><a class="text-decoration-none" href="#galeria">Galeria</a></li>
-                        <li><a class="text-decoration-none" href="#faq">Preguntas</a></li>
-                        <li><a class="text-decoration-none" href="#faq">Contacto</a></li>
+                        <li><a class="text-decoration-none" href="#faq">Preguntas Frecuentes</a></li>
+                        <li><a class="text-decoration-none" href="#contacto">Contacto</a></li>
 
 
                     </ul>
                 </div>
 
-                <div class="col-md-3 text-center text-md-start">
+                <div class="col-md-3 text-center">
                     <h6 class="fw-semibold">Contacto</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Panamericana Km 50 – Pilar</li>
@@ -944,16 +1287,13 @@
                     </ul>
                 </div>
 
-                <div class="col-md-2 text-center text-md-start">
-                    <h6 class="fw-semibold">Redes</h6>
-                    <div class="d-flex gap-2 justify-content-center justify-content-md-start">
-                        <a class="btn btn-outline-secondary btn-lg rounded-circle p-2"
+                <div class="col-md-2 text-center">
+                    <h6 class="fw-semibold">¡Seguinos en Instagram!</h6>
+                    <div class="d-flex gap-2 justify-content-center">
+                        <a class="btn btn-outline-secondary btn-sm rounded-circle"
                             href="https://www.instagram.com/baloramed?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                             target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a class="btn btn-outline-secondary btn-lg rounded-circle p-2" href="#" aria-label="LinkedIn"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a class="btn btn-outline-secondary btn-lg rounded-circle p-2" href="#" aria-label="Facebook"><i
-                                class="bi bi-facebook"></i></a>
+
                     </div>
                 </div>
             </div>

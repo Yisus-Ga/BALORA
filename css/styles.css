@@ -1,3 +1,4 @@
+
 /* ====== VARIABLES DE BOOTSTRAP PERSONALIZADAS ====== */
 :root {
     /* Fondo y texto general */
@@ -93,15 +94,22 @@ body {
 }
 
 
-
 /* NAVBAR / MENU */
 .navbar {
     background-color: var(--bs-secondary) !important;
 }
 
-.navbar img  {
+
+
+.navbar #jarronblanco  {
    object-fit: contain !important;
-   width: 35px !important;
+   width: 2.9rem !important;
+   margin-top: 0.4rem !important;
+}
+
+.navbar #balora-letras-blanco  {
+   object-fit: contain !important;
+   width: 6.8rem !important;
 }
 
 .navbar a.nav-link,
@@ -118,11 +126,11 @@ body {
 
 /* HERO/ASIDE*/
 .hero-placeholder {
-    height: 60vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .15)), url(../imagenes/fondo_hero.jpg) center/cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .15)), url(../imagenes/hero-nosotros/heroBaloOfic.webp) center/cover no-repeat;
     color: #fff;
     text-align: center;
 
@@ -159,6 +167,9 @@ main {
 }
 
 /*    <!-- SECCIÓN 1: NOSOTROS -->*/
+
+
+
 
 
 
@@ -566,9 +577,11 @@ footer {
 }
 
 
-footer img {
+footer #logoCompleto {
    object-fit: contain;
-    max-width: 180px;
+    max-width: 65%;
+    margin-top: 0.5rem;
+   
 }
 
 footer a {
@@ -577,19 +590,21 @@ footer a {
 
 footer a:hover {
 
-    color: var(--bs-primary);
+    color: var(--bs-info);
       text-decoration: none;
 }
 
+.bi-instagram {
+    font-size: 2rem;
+    color: #fff;
+    border: none
+}
 footer .btn-outline-secondary {
-    border-color: rgba(0, 0, 0, 0.06);
+    border: none;
     color: #fff;
 }
 
 footer .btn-outline-secondary:hover {
-    background-color: var(--bs-link-hover-color)
+    background-color: var(--bs-info)
 }
-
-
-
 
