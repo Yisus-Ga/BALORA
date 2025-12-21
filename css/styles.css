@@ -429,81 +429,7 @@ main {
     display: inline-block;
 }
 
-/* small screens: touch-friendly - aumentar área táctil del overlay si se necesita */
-@media (max-width: 576px) {
-    .overlay-text {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-}
 
-/* ===========================
-   Scroll-snap (mobile/tablet) 
-   =========================== */
-@media (max-width: 992px) {
-
-    .gallery-carousel {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-
-        /* convertir fila en track horizontal */
-        display: flex !important;
-        flex-wrap: nowrap;
-        gap: 1rem;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding-top: 0.5rem;
-        padding-bottom: 0.75rem;
-        scrollbar-width: none;
-    }
-
-    .gallery-carousel::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* cada columna como slide */
-    .gallery-carousel>.col {
-        flex: 0 0 80%;
-        max-width: 80%;
-        scroll-snap-align: start;
-        box-sizing: border-box;
-        padding-left: 0.5rem;
-        /* compensar gutters */
-        padding-right: 0.5rem;
-    }
-
-    /* asegurar que la tarjeta ocupe todo el slide */
-    .gallery-carousel>.col .gallery-card {
-        width: 100%;
-    }
-
-    /* UI móvil (flechas/dots) — solo visuales */
-    .gallery-mobile-ui {
-        position: relative;
-        margin-top: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .gallery-dots {
-        display: flex;
-        gap: .5rem;
-        align-items: center;
-    }
-
-    .gallery-dots span {
-        width: 10px;
-        height: 10px;
-        background: #d0d0d0;
-        border-radius: 50%;
-        display: inline-block;
-    }
-}
 
 /* ===========================
    Compatibilidad: si en algún punto anterior tenías .overlay en lugar de .gallery-overlay,
@@ -608,3 +534,98 @@ footer .btn-outline-secondary:hover {
     background-color: var(--bs-info)
 }
 
+
+
+
+
+
+
+/* small screens: touch-friendly - aumentar área táctil del overlay si se necesita */
+@media (max-width: 576px) {
+    .overlay-text {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+   /* 
+    .hero-placeholder {
+    
+    width: 100vw;
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .15)), url(../imagenes/hero-nosotros/heroBaloOficMovil.webp) center/cover no-repeat;
+   
+
+}
+*/
+
+
+}
+/* ===========================
+   Scroll-snap (mobile/tablet) 
+   =========================== */
+@media (max-width: 992px) {
+
+
+
+    .gallery-carousel {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        /* convertir fila en track horizontal */
+        display: flex !important;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 0.5rem;
+        padding-bottom: 0.75rem;
+        scrollbar-width: none;
+    }
+
+    .gallery-carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* cada columna como slide */
+    .gallery-carousel>.col {
+        flex: 0 0 80%;
+        max-width: 80%;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        padding-left: 0.5rem;
+        /* compensar gutters */
+        padding-right: 0.5rem;
+    }
+
+    /* asegurar que la tarjeta ocupe todo el slide */
+    .gallery-carousel>.col .gallery-card {
+        width: 100%;
+    }
+
+    /* UI móvil (flechas/dots) — solo visuales */
+    .gallery-mobile-ui {
+        position: relative;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .gallery-dots {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+
+    .gallery-dots span {
+        width: 10px;
+        height: 10px;
+        background: #d0d0d0;
+        border-radius: 50%;
+        display: inline-block;
+    }
+}
