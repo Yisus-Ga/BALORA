@@ -554,17 +554,17 @@ footer .btn-outline-secondary:hover {
 }
 
      .hero-placeholder h1 {
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
     margin-top: 4rem;
     margin-bottom: 1rem;
   }
-
+/*
   .hero-placeholder p {
     font-size: 0.75rem;
-  }
+  }*/
 
   .hero-placeholder .btn {
-    font-size: 0.9rem;
+    /*font-size: 0.9rem;*/
     padding: 0.5rem 1.2rem;
     margin-bottom: 4rem;
   }
