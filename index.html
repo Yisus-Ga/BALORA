@@ -89,9 +89,9 @@
 
     <aside class="hero-placeholder" role="region" aria-label="Hero">
         <div class="container">
-            <h1 class="display-5 fw-bold"><span id="balfont">BÄLORA</span> Medicina Estética Integral</h1>
-            <p class="lead">Tratamientos personalizados con tecnología de vanguardia y un equipo profesional.</p>
-            <a href="#services" class="btn btn-lg btn-primary mt-3">Ver especialidades</a>
+            <h1 class="fw-bold display-6 display-md-5"><span id="balfont">BÄLORA</span> Medicina Estética Integral</h1>
+            <p class="lead fs-6 fs-md-5">Tratamientos personalizados con tecnología de vanguardia y un equipo profesional.</p>
+            <a href="#services" class="btn btn-primary btn-sm btn-md-lg mt-3">Ver especialidades</a>
         </div>
     </aside>
 
@@ -1338,7 +1338,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Año dinámico
-        document.getElementById('year').textContent = new Date().getFullYear();
+          const footerYear = document.getElementById('footerYear');
+  if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
+  }
     </script>
 </body>
 

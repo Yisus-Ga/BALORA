@@ -1,4 +1,5 @@
 
+
 /* ====== VARIABLES DE BOOTSTRAP PERSONALIZADAS ====== */
 :root {
     /* Fondo y texto general */
@@ -120,9 +121,6 @@ body {
 .navbar a.nav-link:hover {
     color: var(--bs-info) !important;
 }
-
-
-
 
 /* HERO/ASIDE*/
 .hero-placeholder {
@@ -547,16 +545,30 @@ footer .btn-outline-secondary:hover {
         padding: 0.5rem 1rem;
     }
 
-   /* 
+   
     .hero-placeholder {
     
-    width: 100vw;
-    
     background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .15)), url(../imagenes/hero-nosotros/heroBaloOficMovil.webp) center/cover no-repeat;
-   
+    height: auto;
 
 }
-*/
+
+     .hero-placeholder h1 {
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-placeholder p {
+    font-size: 0.75rem;
+  }
+
+  .hero-placeholder .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+    margin-bottom: 4rem;
+  }
+
 
 
 }
