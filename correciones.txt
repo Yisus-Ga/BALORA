@@ -1,0 +1,59 @@
+(cuando tengas dominio): Google Search Console
+
+Entrás a Search Console
+
+Pegás la URL del sitemap
+
+Google lo lee
+
+(esto lo vemos más adelante)
+
+
+
+¡Hola! Quiero mas información sobre: Control de lunares - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Control%20de%20lunares%20-%20
+
+¡Hola! Quiero mas información sobre: Tratamiento de acné, rosácea y melasma - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Tratamiento%20de%20acn%C3%A9%2C%20ros%C3%A1cea%20y%20melasma%20-%20
+
+¡Hola! Quiero mas información sobre: Biopsias y criocirugía - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Biopsias%20y%20criocirug%C3%ADa%20-%20
+
+¡Hola! Quiero mas información sobre: Toxina Botulínica - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Toxina%20Botul%C3%ADnica%20-%20
+
+¡Hola! Quiero mas información sobre: Rellenos Faciales - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Rellenos%20Faciales%20-%20
+
+¡Hola! Quiero mas información sobre: Bioestimuladores - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Bioestimuladores%20-%20
+
+¡Hola! Quiero mas información sobre: PRP - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20PRP%20-%20
+
+¡Hola! Quiero mas información sobre: Mesoterapia - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Mesoterapia%20-%20
+
+¡Hola! Quiero mas información sobre: Peeling profundo - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Peeling%20profundo%20-%20
+
+
+¡Hola! Quiero mas información sobre: Cirugía mamaria - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Cirug%C3%ADa%20mamaria%20-%20
+
+¡Hola! Quiero mas información sobre: Blefaroplastia - 
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Blefaroplastia%20-%20
+
+¡Hola! Quiero mas información sobre: Cirugía de contorno corporal -
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Cirug%C3%ADa%20de%20contorno%20corporal%20-
+
+¡Hola! Quiero mas información sobre: Limpieza facial -
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Limpieza%20facial%20-
+
+¡Hola! Quiero mas información sobre: Drenaje linfático -
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Drenaje%20linf%C3%A1tico%20-
+
+¡Hola! Quiero mas información sobre: Masaje corporal y facial -
+?text=%C2%A1Hola%21%20Quiero%20mas%20informaci%C3%B3n%20sobre%3A%20Masaje%20corporal%20y%20facial%20-
+
+¡Hola! Quiero mas información sobre: Exilis ultra 360 (BTL) -
