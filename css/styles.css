@@ -162,9 +162,26 @@ body {
 
 /* Ajuste para móvil */
 @media (max-width: 991px) {
+    .navbar .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
     .lang-toggle {
         margin-right: 0.5rem;
         margin-left: auto;
+        order: 2;
+    }
+    
+    .navbar-toggler {
+        order: 3;
+    }
+    
+    .navbar-collapse {
+        order: 4;
+        width: 100%;
+        flex-basis: 100%;
     }
 }
 
