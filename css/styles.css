@@ -27,7 +27,8 @@
 /* Scroll suave y offset para navbar fijo */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Compensa la altura del navbar fijo */
+    scroll-padding-top: 80px;
+    /* Compensa la altura del navbar fijo */
 }
 
 /* Fondo del body */
@@ -160,30 +161,7 @@ body {
     color: #fff !important;
 }
 
-/* Ajuste para móvil */
-@media (max-width: 991px) {
-    .navbar .container-fluid {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .lang-toggle {
-        margin-right: 0.5rem;
-        margin-left: auto;
-        order: 2;
-    }
-    
-    .navbar-toggler {
-        order: 3;
-    }
-    
-    .navbar-collapse {
-        order: 4;
-        width: 100%;
-        flex-basis: 100%;
-    }
-}
+/* Ajuste para móvil - se movió a la sección de Media Queries */
 
 /* HERO/ASIDE*/
 
@@ -244,10 +222,18 @@ main {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
+/* Control de altura de imágenes en cards de servicios */
+.treatment-card .card-img-top {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* Modal imagen responsiva */
 .modal-img {
     width: 100%;
-    height: 220px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -487,36 +473,25 @@ footer .btn-outline-secondary:hover {
 
 /* ===========================
    Media Queries / Responsividad
+   Orden: de mayor a menor breakpoint
    =========================== */
-   /* small screens: touch-friendly - aumentar área táctil del overlay si se necesita */
 
-   @media (max-width: 576px) {
-
-    .overlay-text {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
+/* 1. Desktop pequeño / Tablet grande (1200px) */
+@media (max-width: 1200px) {
+    .treatment-card .card-img-top {
+        height: 300px;
+        max-height: 350px;
     }
-
-    .hero-placeholder {
-        background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .15)), url(../imagenes/hero-nosotros/heroBaloOficMovil.webp) center/cover no-repeat;
-        height: auto;
-
-    }
-
-    .hero-placeholder h1 {
-        margin-top: 4rem;
-        margin-bottom: 1rem;
-    }
-
-    .hero-placeholder .btn {
-        padding: 0.5rem 1.2rem;
-        margin-bottom: 4rem;
+    .gallery-carousel>.col .gallery-card {
+        width: 80%;
     }
 }
 
+/* 2. Tablet (992px) */
 @media (max-width: 992px) {
+    
 
-/* ===========================
+    /* ===========================
    Services - Scroll Snap Carousel (mobile/tablet)
    =========================== */
 
@@ -672,5 +647,61 @@ footer .btn-outline-secondary:hover {
         background: #d0d0d0;
         border-radius: 50%;
         display: inline-block;
+    }
+}
+
+/* 3. Tablet pequeño / Navbar responsive (991px) */
+@media (max-width: 991px) {
+    .navbar .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .lang-toggle {
+        margin-right: 0.5rem;
+        margin-left: auto;
+        order: 2;
+    }
+
+    .navbar-toggler {
+        order: 3;
+    }
+
+    .navbar-collapse {
+        order: 4;
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+/* 4. Mobile grande / Tablet pequeño (770px) */
+@media (max-width: 770px) {
+    .treatment-card .card-img-top {
+        height: 350px;
+        object-position: bottom;
+    }
+}
+
+/* 5. Mobile (576px) */
+@media (max-width: 576px) {
+    .overlay-text {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-placeholder {
+        background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .15)), url(../imagenes/hero-nosotros/heroBaloOficMovil.webp) center/cover no-repeat;
+        height: auto;
+    }
+
+    .hero-placeholder h1 {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-placeholder .btn {
+        padding: 0.5rem 1.2rem;
+        margin-bottom: 4rem;
     }
 }
