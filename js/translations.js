@@ -48,9 +48,9 @@ const translations = {
         "services.card.biopsias.desc": "Diagnóstico y tratamiento de patologías benignas y malignas.",
         
         // Services Cards - Medicina Estética
-        "services.card.botox.title": "Toxina Botulínica",
+        "services.card.botox.title": "Toxina botulínica",
         "services.card.botox.desc": "Reducción de líneas de expresión y arrugas dinámicas.",
-        "services.card.rellenos.title": "Rellenos Faciales",
+        "services.card.rellenos.title": "Rellenos faciales",
         "services.card.rellenos.desc": "Armonización facial con ácido hialurónico y técnicas de volumen.",
         "services.card.bioestimuladores.title": "Bioestimuladores",
         "services.card.bioestimuladores.desc": "Estimulación de la regeneración celular para una piel más uniforme.",
@@ -62,7 +62,7 @@ const translations = {
         "services.card.peeling.desc": "Exfoliación química para la mejora en calidad de la piel.",
         
         // Services Cards - Cirugía Plástica
-        "services.card.ReseccionesLocales.title": "Resecciones Locales",
+        "services.card.ReseccionesLocales.title": "Resecciones locales",
         "services.card.ReseccionesLocales.desc": "Resección quirúrgica de lesiones de piel.",
         "services.card.mamaria.title": "Cirugía mamaria",
         "services.card.mamaria.desc": "Aumento, reducción y pexia.",
@@ -88,13 +88,13 @@ const translations = {
         "modal.lunares.title": "Control de lunares",
         "modal.acne.title": "Tratamiento de acné, rocacea y melasma",
         "modal.biopsias.title": "Biopsias y criocirugía",
-        "modal.botox.title": "Toxina Botulínica",
-        "modal.rellenos.title": "Rellenos Faciales",
+        "modal.botox.title": "Toxina botulínica",
+        "modal.rellenos.title": "Rellenos faciales",
         "modal.bioestimuladores.title": "Bioestimuladores",
         "modal.prp.title": "PRP",
         "modal.mesoterapia.title": "Mesoterapia",
         "modal.peeling.title": "Peeling profundo",
-        "modal.ReseccionesLocales.title": "Resecciones Locales",
+        "modal.ReseccionesLocales.title": "Resecciones locales",
         "modal.mamaria.title": "Cirugía mamaria",
         "modal.blefaroplastia.title": "Blefaroplastia",
         "modal.contorno.title": "Cirugía de contorno corporal",
