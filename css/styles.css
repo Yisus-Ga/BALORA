@@ -224,10 +224,10 @@ main {
 
 /* Control de altura de imágenes en cards de servicios */
 .treatment-card .card-img-top {
+    max-height: 320px;
     width: 100%;
-    height: 400px;
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
 }
 
 /* Modal imagen responsiva */
@@ -243,6 +243,8 @@ main {
     padding-top: 0 !important;
     margin-top: 0 !important;
 }
+
+
 
 .before-after {
     width: 100%;
@@ -473,56 +475,49 @@ footer .btn-outline-secondary:hover {
 
 /* ===========================
    Media Queries / Responsividad
-   Orden: de mayor a menor breakpoint
+   Orden: max-width de mayor a menor, luego min-width (desktop)
    =========================== */
 
 /* 1. Desktop pequeño / Tablet grande (1200px) */
-@media (max-width: 1200px) {
-    .treatment-card .card-img-top {
-        height: 300px;
-        max-height: 350px;
-    }
-    .gallery-carousel>.col .gallery-card {
-        width: 80%;
-    }
-}
 
-/* 2. Tablet (992px) */
+
+/* 2. Tablet y móvil (992px): navbar colapsado + carruseles */
 @media (max-width: 992px) {
-    
+    /* ----- Navbar responsive ----- */
+    .navbar .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .lang-toggle {
+        margin-right: 0.5rem;
+        margin-left: auto;
+        order: 2;
+    }
+    .navbar-toggler {
+        order: 3;
+    }
+    .navbar-collapse {
+        order: 4;
+        width: 100%;
+        flex-basis: 100%;
+    }
 
-    /* ===========================
-   Services - Scroll Snap Carousel (mobile/tablet)
-   =========================== */
-
-    /* Neutralizar gutters negativos del .row para evitar overflow */
+    /* ----- Services: scroll snap carousel ----- */
     .services-responsive {
         margin-left: 0;
-        /* anula el -15px default de .row en bootstrap */
         margin-right: 0;
         padding-left: 0.75rem;
-        /* padding para dar espacio lateral */
         padding-right: 0.75rem;
-    }
-
-    /* Convertir la fila en track horizontal */
-    .services-responsive {
         display: flex !important;
-        /* transformar en flex sólo en este breakpoint */
         flex-wrap: nowrap;
-        /* items en una sola fila */
         gap: 1rem;
-        /* separación entre items */
         overflow-x: auto;
-        /* scroll horizontal */
         scroll-snap-type: x mandatory;
-        /* habilita scroll-snap */
         -webkit-overflow-scrolling: touch;
-        /* momentum scroll iOS */
         padding-top: 0.5rem;
         padding-bottom: 0.75rem;
         scrollbar-width: none;
-        /* Firefox: ocultar scrollbar */
     }
 
     /* ocultar scrollbar Webkit */
@@ -532,9 +527,9 @@ footer .btn-outline-secondary:hover {
 
     /* Cada item (col) funciona como slide */
     .services-responsive>.col {
-        flex: 0 0 70%;
+        flex: 0 0 90%;
         /* ancho del slide: 70% (peek lateral) */
-        max-width: 70%;
+        max-width: 90%;
         scroll-snap-align: start;
         /* snap al inicio del slide */
         box-sizing: border-box;
@@ -650,40 +645,15 @@ footer .btn-outline-secondary:hover {
     }
 }
 
-/* 3. Tablet pequeño / Navbar responsive (991px) */
-@media (max-width: 991px) {
-    .navbar .container-fluid {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .lang-toggle {
-        margin-right: 0.5rem;
-        margin-left: auto;
-        order: 2;
-    }
-
-    .navbar-toggler {
-        order: 3;
-    }
-
-    .navbar-collapse {
-        order: 4;
-        width: 100%;
-        flex-basis: 100%;
-    }
-}
-
-/* 4. Mobile grande / Tablet pequeño (770px) */
+/* 3. Mobile grande / Tablet pequeño (770px) */
 @media (max-width: 770px) {
     .treatment-card .card-img-top {
         height: 350px;
-        object-position: bottom;
+        object-position: bottom
     }
 }
 
-/* 5. Mobile (576px) */
+/* 4. Mobile (576px) */
 @media (max-width: 576px) {
     .overlay-text {
         font-size: 1rem;
@@ -703,5 +673,25 @@ footer .btn-outline-secondary:hover {
     .hero-placeholder .btn {
         padding: 0.5rem 1.2rem;
         margin-bottom: 4rem;
+    }
+}
+
+/* 5. Solo desktop (min-width 992px): compensar centrado del menú */
+@media (min-width: 992px) {
+    .navbar .navbar-collapse .navbar-nav {
+        transform: translateX(-1.5rem);
+    }
+
+    .treatment-card .card-img-top {
+        height: 320px;
+        max-height: 320px;
+    }
+   
+  
+}
+
+@media (min-width: 1200px) {
+    #exilis {
+        margin-left: 4rem !important;
     }
 }

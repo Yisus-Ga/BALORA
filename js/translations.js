@@ -62,6 +62,8 @@ const translations = {
         "services.card.peeling.desc": "Exfoliación química para la mejora en calidad de la piel.",
         
         // Services Cards - Cirugía Plástica
+        "services.card.ReseccionesLocales.title": "Resecciones Locales",
+        "services.card.ReseccionesLocales.desc": "Resección quirúrgica de lesiones de piel.",
         "services.card.mamaria.title": "Cirugía mamaria",
         "services.card.mamaria.desc": "Aumento, reducción y pexia.",
         "services.card.blefaroplastia.title": "Blefaroplastia",
@@ -92,6 +94,7 @@ const translations = {
         "modal.prp.title": "PRP",
         "modal.mesoterapia.title": "Mesoterapia",
         "modal.peeling.title": "Peeling profundo",
+        "modal.ReseccionesLocales.title": "Resecciones Locales",
         "modal.mamaria.title": "Cirugía mamaria",
         "modal.blefaroplastia.title": "Blefaroplastia",
         "modal.contorno.title": "Cirugía de contorno corporal",
@@ -115,6 +118,7 @@ const translations = {
         "modal.mamaria.desc": "En Bälora realizamos cirugía mamaria con un enfoque integral, priorizando la armonía corporal, la seguridad y resultados naturales. Ofrecemos aumento mamario, reducción mamaria y mastopexia, adaptando cada técnica a la anatomía, necesidades funcionales y expectativas de cada paciente, con planificación personalizada y seguimiento especializado.",
         "modal.blefaroplastia.desc": "Cirugía destinada a rejuvenecer la mirada mediante la corrección del exceso de piel, grasa y flacidez en párpados superiores e inferiores. Mejora el aspecto cansado, aporta frescura al rostro y, en algunos casos, optimiza el campo visual, manteniendo resultados naturales y armónicos.",
         "modal.contorno.desc": "Procedimientos destinados a remodelar y armonizar la silueta, eliminando exceso de piel y grasa tras cambios de peso o embarazo. Incluye abdominoplastía, lipoaspiración y cirugías combinadas, con un enfoque seguro y personalizado.",
+        "modal.ReseccionesLocales.desc": "Resección de lesiones de piel benignas y malignas en cara y cuerpo. Pueden ser realizadas en consultorio o en quirófano según necesidad.",
         "modal.limpieza.desc": "Tratamiento integral que elimina impurezas, células muertas y exceso de sebo, oxigena la piel y restaura su equilibrio natural. Mejora la textura, luminosidad y preparación de la piel para otros procedimientos, combinando salud, bienestar y relax.",
         "modal.drenaje.desc": "Tratamiento manual terapéutico que estimula el sistema linfático, reduce edemas y mejora la circulación. Ideal para bienestar general y como complemento fundamental en la recuperación postquirúrgica, favoreciendo una evolución más rápida y confortable.",
         "modal.masaje.desc": "Masajes terapéuticos orientados al bienestar integral. El masaje relajante reduce el estrés y mejora la circulación; el descontracturante actúa sobre tensiones musculares, aliviando dolores y recuperando movilidad, en un entorno de calma y cuidado.",
@@ -242,6 +246,8 @@ const translations = {
         "services.card.peeling.desc": "Chemical exfoliation to improve skin quality.",
         
         // Services Cards - Plastic Surgery
+        "services.card.ReseccionesLocales.title": "Local Resections",
+        "services.card.ReseccionesLocales.desc": "Surgical resection of skin lesions.",
         "services.card.mamaria.title": "Breast surgery",
         "services.card.mamaria.desc": "Augmentation, reduction and pexy.",
         "services.card.blefaroplastia.title": "Blepharoplasty",
@@ -272,6 +278,7 @@ const translations = {
         "modal.prp.title": "PRP",
         "modal.mesoterapia.title": "Mesotherapy",
         "modal.peeling.title": "Deep peeling",
+        "modal.ReseccionesLocales.title": "Local Resections",
         "modal.mamaria.title": "Breast surgery",
         "modal.blefaroplastia.title": "Blepharoplasty",
         "modal.contorno.title": "Body contouring surgery",
@@ -295,6 +302,7 @@ const translations = {
         "modal.mamaria.desc": "At Bälora we perform breast surgery with an integral approach, prioritizing body harmony, safety and natural results. We offer breast augmentation, breast reduction and mastopexy, adapting each technique to the anatomy, functional needs and expectations of each patient, with personalized planning and specialized follow-up.",
         "modal.blefaroplastia.desc": "Surgery aimed at rejuvenating the gaze by correcting excess skin, fat and sagging in upper and lower eyelids. Improves tired appearance, brings freshness to the face and, in some cases, optimizes the visual field, maintaining natural and harmonious results.",
         "modal.contorno.desc": "Procedures aimed at remodeling and harmonizing the silhouette, eliminating excess skin and fat after weight changes or pregnancy. Includes abdominoplasty, liposuction and combined surgeries, with a safe and personalized approach.",
+        "modal.ReseccionesLocales.desc": "Resection of benign and malignant skin lesions on the face and body. Can be performed in the office or in the operating room depending on need.",
         "modal.limpieza.desc": "Comprehensive treatment that eliminates impurities, dead cells and excess sebum, oxygenates the skin and restores its natural balance. Improves texture, luminosity and preparation of the skin for other procedures, combining health, well-being and relaxation.",
         "modal.drenaje.desc": "Therapeutic manual treatment that stimulates the lymphatic system, reduces edema and improves circulation. Ideal for general well-being and as a fundamental complement in post-surgical recovery, favoring a faster and more comfortable evolution.",
         "modal.masaje.desc": "Therapeutic massages oriented to integral well-being. The relaxing massage reduces stress and improves circulation; the decontracting one acts on muscle tensions, relieving pain and recovering mobility, in an environment of calm and care.",
